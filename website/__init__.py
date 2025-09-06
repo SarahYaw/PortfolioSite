@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+from . import router
 
 def create_app(test_config=None):
     # create and configure the app
@@ -7,8 +8,6 @@ def create_app(test_config=None):
         SECRET_KEY='dev'
     )
 
-    @app.route('/')
-    def hello():
-        return render_template('index.html')
+    app.register_blueprint(router.bp)
 
     return app

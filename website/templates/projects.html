@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h1>Some Things I've Made</h1>
+    <p>I have a <a href="https://github.com/SarahYaw">GitHub</a> and a <a href="www.linkedin.com/in/sarah-yaw-96310b148">LinkedIn</a></p>
+    <h2>Coding</h2>
+    {% from "carousel.html" import carousel %}
+    {{ carousel(context.code_projects) }}
+    <h2>Artistic Endeavors</h2>
+    {{ carousel(context.art_projects) }}
+{% endblock %}
