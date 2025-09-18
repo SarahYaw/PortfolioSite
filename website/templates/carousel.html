@@ -1,16 +1,49 @@
+<!-- code inspo from https://www.w3schools.com/howto/howto_js_slideshow.asp -->
 {% macro carousel(projects) %}
-<link rel="stylesheet" href="../static/carousel.css">
-<div class="carousel">
-    {% for project in projects %}
-        <div class="slide">
-            <h3><a href="{{ project.link }}">{{ project.name }}</a></h3>
-            <p>{{ project.description }}</p>
-            <div class="picture">
-                <img src="{{ project.src }}" alt="{{ project.alt }}">
-                <p>{{project.caption}}</p>
-            </div>
-        </div>
-    {% endfor %}
+{% for project in projects %}
+<div class="slide">
+    <h3><a href="{{ project.link }}">{{ project.name }}</a></h3>
+    <div class="picture">
+        <img src="{{ project.src }}" alt="{{ project.alt }}">
+        <p>{{project.caption}}</p>
+    </div>
+    <p>{{ project.description }}</p>
 </div>
-<!-- <script src="../static/carousel.js"></script> -->
+{% endfor %}
+<button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+<button class="next" onclick="plusSlides(1)">&#10095;</button>
+<script>
+    // code inspo from https://www.w3schools.com/howto/howto_js_slideshow.asp
+    let slideIndex = [1, 1];
+    let slideId = ["code-projects", "art-projects"]
+    showSlides(1, 0);
+    showSlides(1, 1);
+
+    function plusSlides(increment, slideSet) {
+    showSlides(slideIndex[slideSet] += increment, slideSet);
+    }
+
+    function showSlides(increment, slideSet) {
+    let index;
+
+    console.log("'.'+slideId[slideSet]+'.slide'", '.'+slideId[slideSet]+'.slide')
+    console.log("document.querySelectorAll('.'+slideId[slideSet]+'.slide'):", document.querySelectorAll('.'+slideId[slideSet]+'.slide'))
+    let parent = document.querySelectorAll('.',slideId[slideSet],'.slide')
+    console.log('parent:', parent)
+
+    let slides = parent.querySelector(".slide")
+    console.log('slides:',slides)
+
+    console.log('slides:', slides)
+    console.log('slideSet:', slideSet)
+
+    if (increment > slides.length) { slideIndex[slideSet] = 1 }
+    if (increment < 1) { slideIndex[slideSet]=slides.length } 
+    for (index=0; index < slides.length; index++) {
+        console.log('slides[index]:', slides[index]) 
+        slides[index].style.display="none" ; 
+    } 
+    slides[slideIndex[slideSet] - 1].style.display="flex" ; 
+    console.log('slides[slideIndex[slideSet]-1]:', slides[slideIndex[slideSet] - 1]) }
+</script>
 {% endmacro %}

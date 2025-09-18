@@ -24,6 +24,16 @@ def projects():
             'alt':'code',
             'link':'code',
             'caption':'code',
+            'type':'code',
+        },
+        {
+            'name':'code2',
+            'description':'code2',
+            'src':'/static/assets/PennyMabelLeaves.jpg',
+            'alt':'code2',
+            'link':'code2',
+            'caption':'code2',
+            'type':'code',
         },
     ]
     context['art_projects'] = [
@@ -34,6 +44,16 @@ def projects():
             'alt':'art',
             'link':'art',
             'caption':'art',
+            'type':'art',
+        },
+        {
+            'name':'art2',
+            'description':'art2',
+            'src':'/static/assets/PennyMabelLeaves.jpg',
+            'alt':'art2',
+            'link':'art2',
+            'caption':'art2',
+            'type':'art',
         },
     ]
     return render_template('projects.html', context=context)

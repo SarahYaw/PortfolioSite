@@ -44,22 +44,25 @@ main a {
     text-decoration: none;
 }
 .float-right{
-    float:right;
+    float: right;
     margin: 0 0 10px 10px;
 }
 .float-left{
-    float:left;
+    float: left;
     margin: 0 0 10px 10px;
+}
+.d-none {
+    display: none !important;
 }
 .picture {
     max-width: 200px;
     text-align: center;
-    background-color:antiquewhite;
-    color:darkslategray;
-    padding:10px;
-    display:flex;
+    background-color: antiquewhite;
+    color: #04202b;
+    padding: 10px;
+    display: flex;
     flex-direction: column;
-    box-shadow: rgb(102, 102, 102) 5px 5px 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 5px 5px 5px;
 }
 .picture img {
     max-width: 200px;
@@ -71,7 +74,7 @@ main a {
     margin: 5px 0 0 0;
 }
 footer{
-    position:fixed;
+    position: fixed;
     bottom:0;
     font-size: x-small;
 }
