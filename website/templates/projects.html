@@ -1,16 +1,15 @@
 {% extends "layout.html" %}
 {% block content %}
-    <link rel="stylesheet" href="../static/carousel.css">
-    <script src="../static/carousel.js"></script>
     <h1>Some Things I've Made</h1>
-    <p>I have a <a href="https://github.com/SarahYaw">GitHub</a> and a <a href="www.linkedin.com/in/sarah-yaw-96310b148">LinkedIn</a></p>
+    <p>I have a <a href="https://github.com/SarahYaw" target="_blank">GitHub</a> and a <a href="https://www.linkedin.com/in/sarah-yaw-96310b148" target="_blank">LinkedIn</a></p>
     <h2>Coding</h2>
     {% from "carousel.html" import carousel %}
     <div id="code-projects">
-        {{ carousel(context.code_projects) }}
+        {{ carousel(context.code_projects, 0) }}
     </div>
     <h2>Artistic Endeavors</h2>
     <div id="art-projects">
-        {{ carousel(context.art_projects) }}
+        {{ carousel(context.art_projects, 1) }}
     </div>
+    <script src="../static/carousel.js"></script>
 {% endblock %}

@@ -5,7 +5,7 @@ from flask import (
 bp = Blueprint('main', __name__) 
 
 @bp.route('/')
-def index():
+def index():b 
     return render_template('index.html')
 
 
