@@ -2,8 +2,8 @@
 var slideIndex = [1, 1];
 let slideSetList = ["code-projects", "art-projects"]
 
-showSlides(1, 0);
-showSlides(1, 1);
+showSlides(0, 0);
+showSlides(0, 1);
 
 function plusSlides(increment, slideSetId) {
     // number in position slideSetId of slideSetList plus increment is new slide num

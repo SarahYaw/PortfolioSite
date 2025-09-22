@@ -5,6 +5,8 @@
   max-width: 1000px;
   position: relative;
   margin: auto;
+  align-items: center;  
+  justify-content: center;
 }
 
 .slide {
@@ -13,7 +15,7 @@
   align-items: center;
   justify-content: center;
   width: 50%;
-  margin: auto;
+  margin: 0 10% 0 10%;
 
   user-select: none;
   -ms-user-select: none;
