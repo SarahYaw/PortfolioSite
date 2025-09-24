@@ -6,5 +6,26 @@
     <p>Intermediate proficiency in Adobe Suite, Lucidpress, Figma Jira, Trello.</p>
     <p>Full Stack Web Developer; MS in Computer Science from EMU</p>
     <h2>Experience</h2>
-    <h2>Skills</h2>
+    <!-- TODO: make this look cool like: https://docs.google.com/spreadsheets/d/12f2AJLvYtHeL7lleHJI4Yg5dWgsdQvSmecoVcINdW8E/edit?pli=1&gid=0#gid=0 -->
+    <ul>
+        {% for item in context.timeline_items %}
+        <li>
+            <!-- TODO: make the title a thing everything else collapses under until hover/click -->
+            {% if item.link %}
+            <h3><a href={{item.link}}></a></h3>
+            {% else %}
+            <h3>{{item.title}}</h3>
+            {% endif %}
+            <h4>{{item.employer}}</h4>
+            <h4>{{item.duration}}</h4>
+            {% if item.location %}
+            <h4>{{item.location}}</h4>
+            {% endif %}
+            <p>{{item.description}}</p>
+            {% if item.skills %}
+            <p><strong>Skills:</strong> {{item.skills}}</p>
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
 {% endblock %}
