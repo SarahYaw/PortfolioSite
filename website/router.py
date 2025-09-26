@@ -1,7 +1,6 @@
-from flask import (
-    Blueprint, flash, g, redirect, render_template, request, session, url_for
-)
-from .data import art_projects, code_projects, timeline_items
+import datetime
+from flask import Blueprint, render_template
+from .data import *
 
 bp = Blueprint('main', __name__) 
 
@@ -13,7 +12,15 @@ def index():
 @bp.route('/about')
 def about():
     context={}
-    context['timeline_items'] = timeline_items
+    currentYear = datetime.datetime.today().year
+    difference = currentYear - 2016
+    context['years']=[]
+    for year in range(0, difference+1):
+        context['years'].append(currentYear-year)
+    context['timeline_items_1'] = timeline_items_1
+    context['timeline_items_2'] = timeline_items_2
+    context['timeline_items_3'] = timeline_items_3
+    context['timeline_items_4'] = timeline_items_4
     return render_template('about.html', context=context)
 
 @bp.route('/projects')

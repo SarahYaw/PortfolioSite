@@ -1,0 +1,28 @@
+<!-- assistance from https://codepen.io/alvarotrigo/pen/QWqLEGL -->
+{% macro timelines(timeline, number) %}
+<div class="timeline {{number}}">
+    <ul class="timeline-events">
+        {% for item in timeline %}
+        <li class="{{item.tags}}">
+            <div>
+                <!-- TODO: make the title a thing everything else collapses under until hover/click -->
+                {% if item.link %}
+                <h3 class="title"><a href={{item.link}}>{{item.title}}</a></h3>
+                {% else %}
+                <h3 class="title">{{item.title}}</h3>
+                {% endif %}
+                <h4>{{item.employer}}</h4>
+                <h4>{{item.duration}}</h4>
+                {% if item.location %}
+                <h4>{{item.location}}</h4>
+                {% endif %}
+                <p>{{item.description}}</p>
+                {% if item.skills %}
+                <p><strong>Skills:</strong> {{item.skills}}</p>
+                {% endif %}
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endmacro %}

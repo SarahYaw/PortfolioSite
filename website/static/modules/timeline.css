@@ -1,0 +1,235 @@
+/* assistance from https://codepen.io/alvarotrigo/pen/QWqLEGL */
+.timeline-container {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* grid-template-rows: 4vh 36vh 16vh 44vh; */
+    /* position: absolute; */
+    &.one {
+        left: 10px
+    }
+    &.two {
+        left: 20px
+    }
+    &.three {
+        left:30px;
+    }
+    &.four {
+        left: 40px;
+    }
+
+    .empty{ 
+        visibility: hidden;
+    }
+    /* DO A GRID VIEW IDIOT LOL */
+
+    *,
+    *::before,
+    *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    ul {
+        padding: 50px 0;
+    }
+    
+    /* ul li::after {
+        background: #04202b;
+        content: '';
+        list-style-type: decimal;
+        height: 5px;
+        position:absolute;
+        left:50%;
+        bottom: 50%;
+    } */
+
+    ul li {
+        position:relative;
+        list-style-type: none;
+        /* width: 6px; */
+        border-left: solid 5px  #04202b;
+        /* padding-top: 50px; */
+        /* margin-bottom: 5%; */
+
+        /* &.one  */
+        div {
+            margin-left: 5%;
+        }
+        /* &.two div {
+            margin-left: 345px;
+        }
+        &.three div {
+            margin-left: 645px;
+        }
+        &.four div {
+            margin-left: 945px;
+        } */
+
+        /* &::after {
+            width:45px;
+        } */
+
+        /* &.one */
+        ::after {
+            width: 45px;
+        }
+        /* &.two::after {
+            width: 345px;
+        }
+        &.three::after {
+            width: 645px;
+        }
+        &.four::after {
+            width: 945px;
+        } */
+
+        &.zero_month {
+            height: 5px;
+        }
+        &.one_month {
+            height: 2vh;
+        }
+        &.two_month {
+            height: 4vh
+        }
+        &.three_month {
+            height: 6vh
+        }
+        &.four_month {
+            height: 8vh
+        }
+        &.five_month {
+            height: 10vh
+        }
+        &.six_month {
+            height: 12vh
+        }
+        &.eight_month {
+            height: 16vh;
+        }
+        &.ten_month {
+            height: 20vh;
+        }
+        &.eleven_month {
+            height: 22vh;
+        }
+        &.thirteen_month {
+            height:26vh
+        }
+        &.fourteen_month {
+            height:28vh
+        }
+        &.sixteen_month {
+            height:32vh
+        }
+        &.thirty_one_month {
+            height:62vh
+        }
+        &.thirty_two_month {
+            height: 64vh
+        }
+        &.thirty_four_month {
+            height: 68vh;
+        }
+        &.thirty_six_month {
+            height: 72vh
+        }
+        &.thirty_seven_month {
+            height: 74vh
+        }
+        &.fourty_four_month {
+            height: 88vh;
+        }
+    }
+
+    ul li div{
+        /* position: relative; */
+        width: 300px;
+        padding: 15px;
+        border-radius: 5px;
+        /* bottom: 0; */
+        background-color: #04202b;
+        color: #ecfaff;
+        /* visibility: hidden; */
+        /* opacity: 0; */
+        /* transition: all .5s ease-in-out; */
+
+        a { 
+            color: #ecfaff;
+        }
+    }
+
+    .title {
+        font-weight: bold;
+        font-size: 18px;
+        display: block;
+        margin-bottom: 10px;
+    }
+/* 
+    ul li:nth-child(odd) div {
+        transform: translate3d(200px, 0, 0);
+    }
+
+    ul li:nth-child(even) div {
+        transform: translate3d(-200px, 0, 0);
+    } */
+
+    /* ul li.show div {
+        transform: none;
+        visibility: visible;
+        opacity: 1;
+    } */
+
+    @media screen and (max-width: 900px) {
+        ul li div {
+            width: 250px;
+        }
+    }
+
+    ul li,
+    ul li div {
+        &.green,
+        &.green.show::after {
+            border-left: solid 5px #03562d !important;
+            color: #ecfaff;
+
+            .light {
+                opacity: 50%;
+            }
+        }
+        &.green.show div {
+            background-color: #03562d;
+        }
+
+        &.purple,
+        &.purple.show::after {
+            border-left: solid 5px #672477 !important;
+            color: #ecfaff;
+
+            .light {
+                opacity: 50%;
+            }
+        }
+        
+        &.purple.show div {
+            background-color: #672477;
+        }
+
+        &.orange,
+        &.orange.show::after {
+            border-left: solid 5px #b75105 !important;
+            
+            .light {
+                opacity: 50%;
+            }
+        }
+        
+        &.orange.show div{
+            background-color: #b75105;
+        }
+    }
+    p {
+        margin: 5px 0;
+    }
+}

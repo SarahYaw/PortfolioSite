@@ -45,9 +45,6 @@ main a {
     color: steelblue;
     text-decoration: none;
 }
-main h4 {
-    margin: 2px;
-}
 .float-right{
     float: right;
     margin: 0 0 10px 10px;
