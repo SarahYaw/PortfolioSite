@@ -5,12 +5,17 @@
 <button class="prev" onclick="plusSlides(-1, {{set}})">&#10094;</button>
 {% for project in projects %}
     <div class="slide">
+        {% if project.link %}
         <h2><a href="{{ project.link }}" target="_blank">{{ project.name }}</a></h2>
+        {% else %}
+        <h2>{{ project.name }}</h2>
+        {% endif %}
         <div class="picture">
             <img src="{{ project.src }}" alt="{{ project.alt }}">
             <p>{{project.caption}}</p>
         </div>
-        <p>{{ project.description }}</p>
+        <p> &nbsp; &nbsp; {{ project.description }}</p>
+        <h3 style="width:100%; margin: 5px">Skills:</h3>
         <p>{{ project.skills }}</p>
     </div>
 {% endfor %}

@@ -7,9 +7,9 @@
             <div class="card squished">
                 <!-- TODO: make the title a thing everything else collapses under until hover/click -->
                 {% if item.link %}
-                <h3 class="title"><a href={{item.link}} target="_blank">{{item.title}}</a></h3>
+                <p class="title"><a href={{item.link}} target="_blank">{{item.title}}</a></p>
                 {% else %}
-                <h3 class="title">{{item.title}}</h3>
+                <p class="title">{{item.title}}</p>
                 {% endif %}
                     <h4>{{item.employer}}</h4>
                     <h4>{{item.duration}}</h4>
@@ -18,7 +18,7 @@
                     {% endif %}
                 {% if item.description %}
                     <div class="card-body">
-                        <p>{{item.description}}</p>
+                        <p> &nbsp; &nbsp; {{item.description}}</p>
                         {% if item.skills %}
                         <p><strong>Skills:</strong> {{item.skills}}</p>
                         {% endif %}

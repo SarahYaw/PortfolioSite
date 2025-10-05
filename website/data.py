@@ -87,7 +87,7 @@ timeline_items_1 = [
         'duration': 'Jun 2025 - Present',
         'location': 'United States · Remote',
         'description': "During my time here I  am responsible for all tech related issues and advances. This involves maintaining and improving Rock Solid's website and customer-facing digital tools, development and management of internal dashboards to improve broker and dispatcher workflow., troubleshooting and tech support as issues arise",
-        'skills': 'Application Development · Application Programming Interfaces (API) · Back-End Web Development · Bootstrap (Framework) · Cascading Style Sheets (CSS) · Communication · Database Design · Front-End Development · Full-Stack Development · Git · Graphic Design · HTML · HTML5 · JavaScript · MySQL · Problem Solving · Programming · Programming Languages · Project Development · Project Planning · Requirements Gathering · SQL · Software Development · User Experience (UX) · User Interface Design · Visual Studio · Web Application Development · Web Applications · Web Development · Wireframing · Google Cloud Suite',
+        'skills': 'Application Development · Application Programming Interfaces (API) · Back-End Web Development · Bootstrap (Framework) · Cascading Style Sheets (CSS) · Communication · Database Design · Front-End Development · Full-Stack Development · Git · Graphic Design · HTML · HTML5 · JavaScript · Databases · Problem Solving · Programming · Programming Languages · Project Development · Project Planning · Requirements Gathering · SQL · Software Development · User Experience (UX) · User Interface Design · Visual Studio · Web Application Development · Web Applications · Web Development · Wireframing · Google Cloud Suite',
         'tags':'one four_month timeline-event orange'
     },
     {
@@ -131,6 +131,7 @@ timeline_items_1 = [
         'title': "Master's degree, Computer Science",
         'location': 'Eastern Michigan University',
         'duration': 'Sep 2020 - Dec 2021',
+        'description':"Due to keeping a 3.9ish average, I was eligible for a Graduate Assistant position, which pays for your graduate school curriculum along with an hourly pay. Because of that, I covered my grad tuition and boarding as well. I was off-handedly offered the chance to teach an undergrad introductory class, but the 2020 pandemic happened and the univerity stuck with their staff for teaching.",
         'tags':'one sixteen_month timeline-event green'
     },
     {
@@ -147,6 +148,7 @@ timeline_items_1 = [
         'employer': 'Minor in Mathematics',
         'location': 'Eastern Michigan University',
         'duration': 'Sep 2016 - Apr 2020',
+        'description': "I'm pretty shy talking about it, but I was lucky enough to get a full ride scholarship for undergrad. Because of that, I was able to take some 'for fun' classes as well! Those include watercolor, graphic design, astronomy, and botany classes and more.",
         'tags':'one fourty_four_month timeline-event green'
     }
 ]
