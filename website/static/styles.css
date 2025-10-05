@@ -70,6 +70,7 @@ main h1 {
     display: flex;
     flex-direction: column;
     box-shadow: rgba(0, 0, 0, 0.1) 5px 5px 5px;
+    margin: 0 50px 0 50px;
 }
 .picture img {
     width: 500px;
@@ -80,6 +81,13 @@ main h1 {
 .picture p{
     font-size: medium;
     margin: 5px 0 0 0;
+}
+.picture.home {
+    width: 300px;
+
+    img {
+        width: 300px
+    }
 }
 footer{
     position: fixed;
