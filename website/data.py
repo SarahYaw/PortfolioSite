@@ -78,7 +78,7 @@ art_projects = [
 timeline_items_1 = [
     {
         'title':'IT/Developer & Systems Analyst',
-        'employer':'Rock Solid Logistics, Inc. · Full-time',
+        'employer':'Rock Solid Logistics, Inc.',
         'duration': 'Jun 2025 - Present',
         'location': 'United States · Remote',
         'description': '''
@@ -111,7 +111,7 @@ timeline_items_1 = [
     },
     {
         'title': 'Full-stack Developer',
-        'employer':'Futuri · Full-time',
+        'employer':'Futuri',
         'duration':'Mar 2022 - Mar 2025',
         'location':'United States · Remote',
         'description': 'Development and maintenance across multiple software projects. Most using a Vue.js frontend and Django python or a PHP backend.',
@@ -199,7 +199,7 @@ timeline_items_2 = [
     },
     {
         'title': 'Graduate Assistant',
-        'employer': 'Eastern Michigan University · Full-time',
+        'employer': 'Eastern Michigan University',
         'duration': 'Sep 2020 - Dec 2021',
         'location': 'Ypsilanti, Michigan, United States',
         'description':'''
@@ -209,7 +209,7 @@ timeline_items_2 = [
             - Tutoring hours outside of normal class functioning to assist other students with any questions they may have.- Graded homework assignments and projects to give feedback on learning goal progression. - Assisted students during class with learning to code as well as any technical difficulties. - Assisted in development of assignments that ensure a solid understanding of foundational concepts for the class. - Tutoring hours outside of normal class functioning to assist other students with any questions they may have.
         ''',
         'skills':'Communication · Computer Science · Java · Problem Solving · Teaching · Programming Languages · Node.js',
-        'tags':'two sixteen_month timeline-event green'
+        'tags':'two sixteen_month timeline-event green bottom-half'
     }, 
     {
         'link': '',
@@ -233,7 +233,7 @@ timeline_items_2 = [
             - Promoted The Honors College to the students at EMU in an appealing and accessible way.- Collaborated with the programming team to create event flyers and social media graphics. - Collaborated with the computing team to create accessible user interfaces for applications. - Designed pamphlets to advertise and inform students about various events being hosted by The Honors College. - Drafted scholarship application forms to ensure efficient and accessible application and data entry. - Promoted The Honors College to the students at EMU in an appealing and accessible way.
         ''',
         'skills': 'Communication · Social Media · English · Graphic Design · Social Media Graphic Design',
-        'tags':'two thirty_two_month timeline-event green'
+        'tags':'two thirty_two_month timeline-event green bottom-half'
     },
 ]
 timeline_items_3 = [
@@ -287,7 +287,7 @@ timeline_items_3 = [
     },
     {
         'title': 'Teaching Assistant',
-        'employer': 'Eastern Michigan University · Full-time',
+        'employer': 'Eastern Michigan University',
         'duration': 'Jan 2020 - Apr 2020',
         'location': 'Ypsilanti, Michigan, United States',
         'description': '''
@@ -296,7 +296,7 @@ timeline_items_3 = [
             - Assisted in development of assignments that ensure a solid understanding of foundational concepts for the class.- Graded homework assignments and projects to give feedback on learning goal progression.. - Assisted students during class with learning to code as well as any technical difficulties. - Assisted in development of assignments that ensure a solid understanding of foundational concepts for the class.
         ''',
         'skills': 'Communication · Computer Science · HTML5 · Java · Problem Solving · JavaScript · Programming Languages · Cascading Style Sheets (CSS)',
-        'tags':'three four_month timeline-event green'
+        'tags':'three four_month timeline-event green bottom-half'
     },
     {
         'link': 'https://github.com/crypt0d1v3r/Checkers',
@@ -305,7 +305,7 @@ timeline_items_3 = [
         'duration': 'Sep 2019 - Dec 2019',
         'description': 'A program that uses AI principals to play checkers against the user. I chiefly did the user Interface for this project.',
         'skills': ' Java · GitHub · Computer Science · Communication · Git · Programming Languages · Software Development · Graphic Design · Programming',
-        'tags':'four three_month timeline-event green light'
+        'tags':'four three_month timeline-event green light bottom-half'
     },
     {
         'link': '',
@@ -318,7 +318,7 @@ timeline_items_3 = [
     },
     {
         'title': 'Teaching Assistant',
-        'employer': 'Eastern Michigan University · Full-time',
+        'employer': 'Eastern Michigan University',
         'duration': 'Jun 2018 - Jun 2018',
         'location': 'Ypsilanti, Michigan, United States',
         'description':
@@ -328,7 +328,7 @@ timeline_items_3 = [
             - Created lesson plans that teach introductory concepts and skills and maintain engagement at a middle school level.Teaching assistant for a week-long camp called Bits&Bytes - Taught middle school students basic computer science concepts to introduce them to STEM career choices. - Created lesson plans that teach introductory concepts and skills and maintain engagement at a middle school level.
         ''',
         'skills': 'HTML · Communication · Computer Science · Java · Problem Solving · English · Programming Languages',
-        'tags':'four zero_month timeline-event'
+        'tags':'four zero_month timeline-event bottom-half'
     },
 ]
 timeline_items_4 = [
@@ -383,6 +383,6 @@ timeline_items_4 = [
         'duration': 'Jan 2020 - Apr 2020',
         'description': 'Program that predicts crop yields for Bay County Michigan given precipitation, temperature, and yield data from previous years.',
         'skills': 'Java · GitHub · Computer Science · Programming Languages · Software Development · ProgrammingSkills: Java · GitHub · Computer Science · Programming Languages · Software Development · Programming',
-        'tags':'four four_month timeline-event green light'
+        'tags':'four four_month timeline-event green light bottom-half'
     },
 ]

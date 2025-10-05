@@ -1,9 +1,32 @@
 /* assistance from https://codepen.io/alvarotrigo/pen/QWqLEGL */
+h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+p {
+    margin: 5px 0 5px 0;
+}
 .timeline-container {
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    /* grid-template-rows: 4vh 36vh 16vh 44vh; */
-    /* position: absolute; */
+    padding-left: 10px;
+    display: grid;
+    grid-template-columns: 20px 20px 20px 20px;
+    height: 63vh;
+
+    .squished {
+        width: 0px !important;
+        height: 0px;
+        padding: 0 !important;
+        z-index: 10 !important;
+        position: relative;
+        
+        h3 {
+            visibility: hidden;
+        }
+        h4 {
+            visibility: hidden;
+        }
+    }
+
     &.one {
         left: 10px
     }
@@ -17,11 +40,6 @@
         left: 40px;
     }
 
-    .empty{ 
-        visibility: hidden;
-    }
-    /* DO A GRID VIEW IDIOT LOL */
-
     *,
     *::before,
     *::after {
@@ -30,206 +48,170 @@
         box-sizing: border-box;
     }
 
-    ul {
-        padding: 50px 0;
-    }
-    
-    /* ul li::after {
-        background: #04202b;
-        content: '';
-        list-style-type: decimal;
-        height: 5px;
-        position:absolute;
-        left:50%;
-        bottom: 50%;
-    } */
-
     ul li {
         position:relative;
         list-style-type: none;
-        /* width: 6px; */
-        border-left: solid 5px  #04202b;
-        /* padding-top: 50px; */
-        /* margin-bottom: 5%; */
+        border-left: solid 10px #04202b;
 
-        /* &.one  */
-        div {
-            margin-left: 5%;
-        }
-        /* &.two div {
-            margin-left: 345px;
-        }
-        &.three div {
-            margin-left: 645px;
-        }
-        &.four div {
-            margin-left: 945px;
+        
+
+        /* &.bottom-half .card {
+            position: relative;
+            bottom: 125%;
         } */
 
-        /* &::after {
-            width:45px;
-        } */
+        .card {
+            margin: 0;
+            width: 500px;
+            min-height: 300px;
+            padding: 15px;
+            border-radius: 5px;
+            background-color: #04202b;
+            color: #ecfaff;
+            border: none;
+            z-index: 1000;
 
-        /* &.one */
-        ::after {
-            width: 45px;
-        }
-        /* &.two::after {
-            width: 345px;
-        }
-        &.three::after {
-            width: 645px;
-        }
-        &.four::after {
-            width: 945px;
-        } */
+              position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
 
-        &.zero_month {
-            height: 5px;
+            .title {
+                font-weight: bold;
+                font-size: 18px;
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            a { 
+                color: #ecfaff;
+                text-decoration: underline;
+            }
+
+            .card-body {
+                text-align: left;
+                z-index: 10;
+            
+                p {
+                    font-weight:unset;
+                    margin: 5px 0;
+                }
+            }
         }
+
+        
+        &.empty { 
+            visibility: hidden;
+        }
+
+        &.green {
+            border-color: #03562d;
+            color: #ecfaff;
+
+            .card {
+                background-color: #03562d;
+            }
+            &.light {
+                border-color: #4d9772;
+
+                .card {
+                    background-color: #4d9772;
+                }
+            }
+        }
+
+        &.purple {
+            border-color: #672477;
+            color: #ecfaff;
+
+            .card {
+                background-color: #672477;
+            }
+            &.light {
+                border-color: #614b67;
+
+                .card {
+                    background-color: #614b67;
+                }
+            }
+        }
+
+        &.orange {
+            border-color: #b75105;
+            
+            .card {
+                background-color: #b75105;
+            }
+            &.light {
+                border-color: #8f6546;
+
+                .card {
+                    background-color: #8f6546;
+                }
+            }
+        }
+        
+        &.zero_month,
         &.one_month {
-            height: 2vh;
+            height: calc(1px * 5.5);
         }
         &.two_month {
-            height: 4vh
+            height: calc(2px * 5.5);
         }
         &.three_month {
-            height: 6vh
+            height: calc(3px * 5.5);
         }
         &.four_month {
-            height: 8vh
+            height: calc(4px * 5.5);
         }
         &.five_month {
-            height: 10vh
+            height: calc(5px * 5.5);
         }
         &.six_month {
-            height: 12vh
+            height: calc(6px * 5.5);
         }
         &.eight_month {
-            height: 16vh;
+            height: calc(8px * 5.5);
         }
         &.ten_month {
-            height: 20vh;
+            height: calc(10px * 5.5);
         }
         &.eleven_month {
-            height: 22vh;
+            height: calc(11px * 5.5);
         }
         &.thirteen_month {
-            height:26vh
+            height: calc(13px * 5.5);
         }
         &.fourteen_month {
-            height:28vh
+            height: calc(14px * 5.5);
         }
         &.sixteen_month {
-            height:32vh
+            height: calc(16px * 5.5);
         }
         &.thirty_one_month {
-            height:62vh
+            height: calc(31px * 5.5);
         }
         &.thirty_two_month {
-            height: 64vh
+            height: calc(32px * 5.5);
         }
         &.thirty_four_month {
-            height: 68vh;
+            height: calc(34px * 5.5);
         }
         &.thirty_six_month {
-            height: 72vh
+            height: calc(36px * 5.5);
         }
         &.thirty_seven_month {
-            height: 74vh
+            height: calc(37px * 5.5);
         }
         &.fourty_four_month {
-            height: 88vh;
+            height: calc(44px * 5.5);
         }
     }
-
-    ul li div{
-        /* position: relative; */
-        width: 300px;
-        padding: 15px;
-        border-radius: 5px;
-        /* bottom: 0; */
-        background-color: #04202b;
-        color: #ecfaff;
-        /* visibility: hidden; */
-        /* opacity: 0; */
-        /* transition: all .5s ease-in-out; */
-
-        a { 
-            color: #ecfaff;
-        }
-    }
-
-    .title {
-        font-weight: bold;
-        font-size: 18px;
-        display: block;
-        margin-bottom: 10px;
-    }
-/* 
-    ul li:nth-child(odd) div {
-        transform: translate3d(200px, 0, 0);
-    }
-
-    ul li:nth-child(even) div {
-        transform: translate3d(-200px, 0, 0);
-    } */
-
-    /* ul li.show div {
-        transform: none;
-        visibility: visible;
-        opacity: 1;
-    } */
 
     @media screen and (max-width: 900px) {
         ul li div {
             width: 250px;
         }
-    }
-
-    ul li,
-    ul li div {
-        &.green,
-        &.green.show::after {
-            border-left: solid 5px #03562d !important;
-            color: #ecfaff;
-
-            .light {
-                opacity: 50%;
-            }
-        }
-        &.green.show div {
-            background-color: #03562d;
-        }
-
-        &.purple,
-        &.purple.show::after {
-            border-left: solid 5px #672477 !important;
-            color: #ecfaff;
-
-            .light {
-                opacity: 50%;
-            }
-        }
-        
-        &.purple.show div {
-            background-color: #672477;
-        }
-
-        &.orange,
-        &.orange.show::after {
-            border-left: solid 5px #b75105 !important;
-            
-            .light {
-                opacity: 50%;
-            }
-        }
-        
-        &.orange.show div{
-            background-color: #b75105;
-        }
-    }
-    p {
-        margin: 5px 0;
     }
 }
