@@ -43,52 +43,51 @@ code_projects = [
         'alt':'Spot On user interface showing a soundwave under the header Current Spot, and options to manage the spec spot and adjust audio levels.',
         'link':'https://futurimedia.com/solutions/spoton/',
         'caption':'One-Click spec spots and audio commercials.',
+    },
+    {
+        'name': 'Crop Yield Predictor',
+        'description': 'Program that predicts crop yields for Bay County Michigan given precipitation, temperature, and yield data from previous years. This was a project for my Big Data class. The focus was on handling large amounts of data and managing it efficiently.',
+        'skills': 'Java · GitHub · Computer Science · Programming Languages · Software Development · Programming',
+        'src':'/static/assets/code/cropYield.jpg',
+        'alt': 'Poster showing the project details of the crop yield program.',
+        'link':'https://www.facebook.com/share/p/1Cgkuxb2fD/',
+        'caption':'Presentation poster I made for the Undergraduate Symposium'
     }
 ]
 art_projects = [
     {
-        'name':'art',
-        'description':'art',
-        'skills':'PythonGathering',
+        'name':'Peer Review Cross Stitch',
+        'description':'This was a project I made for a friend of mine for getting his doctorate! He worked really hard for it and we both have a similar love for research for fun and silly inspirational quotes',
+        'skills':'Cross Stitch · Emproidery · Counting',
         'src':'/static/assets/art/PeerReviewCrossStitch.jpg',
-        'alt':'art',
-        'link':'art',
-        'caption':'art',
+        'alt':'cross stitch of a wreath of leaves in different shades of green around a quote that reads "I can do all things through evidence based best practice which strengthens me. peer review 24:7"',
+        'caption':"Pardon the glare in the glass, it was tricky getting an image that the glass didn't totally reflect back!",
     },
     {
-        'name':'art2',
-        'description':'art2',
-        'skills':'PythonGathering',
+        'name':'Papier-mâché Pumpkin Head',
+        'description':"I made this by filling a grocery bag with a bunch of other grocery bags and tying it so there were sectioned ridges, then papier-mâché-ing over that. Each layer took 24 hours to dry so I worked on it a little each day until I was happy with it. I then painted and carved it to look like Jack from the Animal Crossing franchise because even if the kids don't recognise him, he's not particularly scary. Eventually I want to add some kind of netting or fabric on the inside so it's harder to see me in there haha.",
+        'skills':'Papier-mâché · Painting · Carving',
         'src':'/static/assets/art/pumpkinHead.jpg',
-        'alt':'art2',
-        'link':'art2',
-        'caption':'art2',
+        'alt':'Papier-mâché pumpkin head on a person. It is carved into a smile.',
+        'caption':'Me as a Pumpkin Guy for halloween while passing out candy at my gransparents house',
     },
     {
-        'name':'art2',
-        'description':'art2',
-        'skills':'PythonGathering',
+        'name':'Able Sisters Tissue Box Cover',
+        'description':'This is a cardboard tissue box cover made to look like the Able Sisters store in Animal Crossing New Horizons. I grew up playing games in the Animal Crossing franchise and had a free weekend and a lot of cardboard from the holidays. The cardboard is held together by regular school glue and painted with acrylic paint.',
+        'skills':'Painting · Cardboard · Planning',
         'src':'/static/assets/art/TissueCoverAbleSisters.jpg',
-        'alt':'art2',
-        'link':'art2',
-        'caption':'art2',
+        'alt':"Tissue box cover that looks like the Able Sisters store from Animal Crossing New Horizons. It's a building with red siding, a green shingled roof, and white trim. There's a sign above the door that reads Able Sisters and has a green striped awning under that sign. On the left side of the front there's a display window with a mannequin and some spools of thread. ",
+        'caption':'I grew up playing games in the Animal Crossing franchise and Able Sisters was always my favorite store',
     },
 ]
-# TODO: edit descriptions such that no bullet points are necessary
 timeline_items_1 = [
     {
         'title':'IT/Developer & Systems Analyst',
         'employer':'Rock Solid Logistics, Inc.',
         'duration': 'Jun 2025 - Present',
         'location': 'United States · Remote',
-        'description': '''
-            - Maintain and improve Rock Solid's website and customer-facing digital tools.
-            - Develop and manage internal dashboards to improve broker and dispatcher workflow.
-            - Troubleshooting and tech support as issues arise.- Maintain and improve Rock Solid's website and customer-facing digital tools.
-            - Develop and manage internal dashboards to improve broker and dispatcher workflow.
-            - Troubleshooting and tech support as issues arise.
-        ''',
-        'skills': 'Application Development · Application Programming Interfaces (API) · Back-End Web Development · Bootstrap (Framework) · Cascading Style Sheets (CSS) · Communication · Database Design · Front-End Development · Full-Stack Development · Git · Graphic Design · HTML · HTML5 · JavaScript · MySQL · Problem Solving · Programming · Programming Languages · Project Development · Project Planning · Requirements Gathering · SQL · Software Development · User Experience (UX) · User Interface Design · Visual Studio · Web Application Development · Web Applications · Web Development · Wireframing',
+        'description': "During my time here I  am responsible for all tech related issues and advances. This involves maintaining and improving Rock Solid's website and customer-facing digital tools, development and management of internal dashboards to improve broker and dispatcher workflow., troubleshooting and tech support as issues arise",
+        'skills': 'Application Development · Application Programming Interfaces (API) · Back-End Web Development · Bootstrap (Framework) · Cascading Style Sheets (CSS) · Communication · Database Design · Front-End Development · Full-Stack Development · Git · Graphic Design · HTML · HTML5 · JavaScript · MySQL · Problem Solving · Programming · Programming Languages · Project Development · Project Planning · Requirements Gathering · SQL · Software Development · User Experience (UX) · User Interface Design · Visual Studio · Web Application Development · Web Applications · Web Development · Wireframing · Google Cloud Suite',
         'tags':'one four_month timeline-event orange'
     },
     {
@@ -105,7 +104,7 @@ timeline_items_1 = [
         'title': 'Simple Form To PDF Program',
         'employer':'Project',
         'duration':'Mar 2025 - Apr 2025',
-        'description': 'import a csv of questions and answers into this program, answer the questions, export a pdf of the filled out form.',
+        'description': 'Import a csv of questions and answers into this program, answer the questions, export a pdf of the filled out form. I made this for a relative that fills out the same form weekly and struggles with making it look nice on the PDF form so this is an effort to auto-generate the PDF so they can just click done and email it off.',
         'skills': 'Python (Programming Language) · Tkinter · Project Planning · Application Development · Requirements Gathering',
         'tags':'one one_month timeline-event'
     },
@@ -157,7 +156,7 @@ timeline_items_2 = [
         'title': 'Portfolio Site',
         'employer':'Project',
         'duration':'Aug 2025 - Present',
-        'description': 'Just a nice little portfolio website to show off projects and summaries',
+        'description': "Just a nice little portfolio website to show off projects and summaries, you're looking at it now! ヾ(＾∇＾)",
         'skills': 'HTML · CSS · JavaScript · Python · Python Flask · Web Applications · User Interface Design · Git · Visual Studio · User Experience (UX)',
         'tags':'two two_month timeline-event'
     },
@@ -175,7 +174,7 @@ timeline_items_2 = [
         'title': 'Medication Manager',
         'employer':'Project',
         'duration':'Apr 2025 - May 2025',
-        'description': "Webpage that allows you to enter meds for it to track when you're due for a refill, how often you take its, who prescribed it, etc.",
+        'description': "Webpage that allows you to enter meds for it to track when you're due for a refill, how often you take what dosage, who prescribed it, etc.",
         'skills': 'React.js · Node.js · Tailwind CSS · TypeScript · User Interface Design · LoopBack.io',
         'tags':'two one_month timeline-event'
     },
@@ -202,12 +201,7 @@ timeline_items_2 = [
         'employer': 'Eastern Michigan University',
         'duration': 'Sep 2020 - Dec 2021',
         'location': 'Ypsilanti, Michigan, United States',
-        'description':'''
-            - Graded homework assignments and projects to give feedback on learning goal progression.
-            - Assisted students during class with learning to code as well as any technical difficulties.
-            - Assisted in development of assignments that ensure a solid understanding of foundational concepts for the class.
-            - Tutoring hours outside of normal class functioning to assist other students with any questions they may have.- Graded homework assignments and projects to give feedback on learning goal progression. - Assisted students during class with learning to code as well as any technical difficulties. - Assisted in development of assignments that ensure a solid understanding of foundational concepts for the class. - Tutoring hours outside of normal class functioning to assist other students with any questions they may have.
-        ''',
+        'description':'As a Graduate Assistant, I was responsible for grading and doing what I could to help the students learn the curriculum. I gave feedback on learning goal progression, assisted students during class with learning to code as well as any technical difficulties, assisted in development of assignments that ensure a solid understanding of foundational concepts for the class, and hosted tutoring hours outside of normal class functioning to assist other students with any questions they may have.',
         'skills':'Communication · Computer Science · Java · Problem Solving · Teaching · Programming Languages · Node.js',
         'tags':'two sixteen_month timeline-event green bottom-half'
     }, 
@@ -225,14 +219,8 @@ timeline_items_2 = [
         'employer': 'The Honors College at Eastern Michigan University · Part-time',
         'duration': 'Sep 2017 - Apr 2020',
         'location': 'Ypsilanti, Michigan, United States',
-        'description': '''
-            - Collaborated with the programming team to create printed event flyers and social media graphics.
-            - Collaborated with the computing team to create accessible user interfaces for applications.
-            - Designed pamphlets to advertise and inform students about various events being hosted by The Honors College.
-            - Drafted scholarship application forms to ensure efficient and accessible application and data entry.
-            - Promoted The Honors College to the students at EMU in an appealing and accessible way.- Collaborated with the programming team to create event flyers and social media graphics. - Collaborated with the computing team to create accessible user interfaces for applications. - Designed pamphlets to advertise and inform students about various events being hosted by The Honors College. - Drafted scholarship application forms to ensure efficient and accessible application and data entry. - Promoted The Honors College to the students at EMU in an appealing and accessible way.
-        ''',
-        'skills': 'Communication · Social Media · English · Graphic Design · Social Media Graphic Design',
+        'description': "During my time as the graphic designer at EMU's The Honors College, I did a lot of different tasks to keep up to date with the latest requirements. I collaborated with the programming team to create printed event flyers and social media graphics, collaborated with the computing team to create accessible user interfaces for applications,  designed pamphlets to advertise and inform students about various events being hosted by The Honors College,  drafted scholarship application forms to ensure efficient and accessible application and data entry, and helped promote The Honors College to the students at EMU in an appealing and accessible way.",
+        'skills': 'Communication · Social Media · Teaching · Graphic Design · Social Media Graphic Design',
         'tags':'two thirty_two_month timeline-event green bottom-half'
     },
 ]
@@ -251,7 +239,7 @@ timeline_items_3 = [
         'title': 'SpotOn',
         'employer':'Project',
         'duration':'Aug 2022 - Mar 2025',
-        'description': 'One-Click spec spots and audio commercials.',
+        'description': 'One-Click spec spots and audio commercials. The goal of this project was to make a technology that allows radio talent to submit their voice for AI voice replication and have the machine read their commercials so they can focus on the content of the show.',
         'skills': 'GitHub · Wireframing · Node.js · Visual Studio · Web Applications · Communication · Bootstrap (Framework) · Web Application Development · Front-End Development · Software as a Service (SaaS) · JavaScript · Application Development · Full-Stack Development · Application Programming Interfaces (API) · Cascading Style Sheets (CSS) · Git · TypeScript · Django · Project Development · REST APIs · Programming Languages · Software Development · User Experience (UX) · Python (Programming Language) · Back-End Web Development · HTML · Programming · Web Development',
         'tags':'three thirty_two_month timeline-event purple light'
     },
@@ -269,11 +257,8 @@ timeline_items_3 = [
         'employer': 'Rock Solid Logistics, Inc. · Internship',
         'duration': 'Apr 2021 - Aug 2021',
         'location': 'Brighton, Michigan, United States',
-        'description': '''
-            - Re-building the company website using Drupal.
-            - Communicating with different employees to ensure a well-rounded design.- Re-building the company website using Drupal. - Communicating with different employees to ensure a well-rounded design.
-        ''',
-        'skills': 'Communication · Problem Solving · English · Programming Languages · Software Development · Project Development · Programming · Wireframing',
+        'description': 'During my time here I re-built the company website using Drupal and communicated with different employees beyond the owners to ensure a well-rounded design that advertised the company as they wanted.',
+        'skills': 'Communication · Problem Solving · Project Development · Programming · Wireframing',
         'tags':'three five_month timeline-event orange'
     },
     {
@@ -290,11 +275,7 @@ timeline_items_3 = [
         'employer': 'Eastern Michigan University',
         'duration': 'Jan 2020 - Apr 2020',
         'location': 'Ypsilanti, Michigan, United States',
-        'description': '''
-            - Graded homework assignments and projects to give feedback on learning goal progression..
-            - Assisted students during class with learning to code as well as any technical difficulties.
-            - Assisted in development of assignments that ensure a solid understanding of foundational concepts for the class.- Graded homework assignments and projects to give feedback on learning goal progression.. - Assisted students during class with learning to code as well as any technical difficulties. - Assisted in development of assignments that ensure a solid understanding of foundational concepts for the class.
-        ''',
+        'description': 'I was a teaching assistant for a semester in an introductory computer science class. This involved grading homework assignments and projects to give feedback on learning goal progression, assisting students during class with learning to code as well as any technical difficulties, and assisting in development of assignments that ensure a solid understanding of foundational concepts for the class.',
         'skills': 'Communication · Computer Science · HTML5 · Java · Problem Solving · JavaScript · Programming Languages · Cascading Style Sheets (CSS)',
         'tags':'three four_month timeline-event green bottom-half'
     },
@@ -304,7 +285,7 @@ timeline_items_3 = [
         'employer': 'Project',
         'duration': 'Sep 2019 - Dec 2019',
         'description': 'A program that uses AI principals to play checkers against the user. I chiefly did the user Interface for this project.',
-        'skills': ' Java · GitHub · Computer Science · Communication · Git · Programming Languages · Software Development · Graphic Design · Programming',
+        'skills': ' Java · GitHub · Communication · Git · Software Development · Graphic Design · Programming',
         'tags':'four three_month timeline-event green light bottom-half'
     },
     {
@@ -323,11 +304,9 @@ timeline_items_3 = [
         'location': 'Ypsilanti, Michigan, United States',
         'description':
         '''
-            Teaching assistant for a week-long camp called Bits&Bytes
-            - Taught middle school students basic computer science concepts to introduce them to STEM career choices.
-            - Created lesson plans that teach introductory concepts and skills and maintain engagement at a middle school level.Teaching assistant for a week-long camp called Bits&Bytes - Taught middle school students basic computer science concepts to introduce them to STEM career choices. - Created lesson plans that teach introductory concepts and skills and maintain engagement at a middle school level.
+            Teaching assistant for a week-long camp called Bits&Bytes. We taught middle school students basic computer science concepts to introduce them to STEM career choices. This involved creating lesson plans that teach introductory concepts and skills and maintain engagement at a middle school level.
         ''',
-        'skills': 'HTML · Communication · Computer Science · Java · Problem Solving · English · Programming Languages',
+        'skills': 'HTML · Communication · Computer Science · Java · Problem Solving · Teaching · Programming Languages',
         'tags':'four zero_month timeline-event bottom-half'
     },
 ]
@@ -365,7 +344,7 @@ timeline_items_4 = [
         'employer': 'Project',
         'duration': 'Jan 2021 - Apr 2021',
         'description': 'A program of different PRNG algorithms researched and coded up for an Independent Study.',
-        'skills': 'Java · GitHub · Computer Science · English · Programming Languages · Software Development · Programming',
+        'skills': 'Java · GitHub · Computer Science · Programming',
         'tags':'four four_month timeline-event green light'
     },
     {
@@ -378,11 +357,12 @@ timeline_items_4 = [
         'tags':'empty eight_month'
     },
     {
+        'link':'https://www.facebook.com/share/p/1Cgkuxb2fD/',
         'title': 'Crop Yield Predictor',
         'employer': 'Project',
         'duration': 'Jan 2020 - Apr 2020',
-        'description': 'Program that predicts crop yields for Bay County Michigan given precipitation, temperature, and yield data from previous years.',
-        'skills': 'Java · GitHub · Computer Science · Programming Languages · Software Development · ProgrammingSkills: Java · GitHub · Computer Science · Programming Languages · Software Development · Programming',
+        'description': 'Program that predicts crop yields for Bay County Michigan given precipitation, temperature, and yield data from previous years. This was a project for my Big Data class. The focus was on handling large amounts of data and managing it efficiently.',
+        'skills': 'Java · GitHub · Computer Science · Software Development · Programming',
         'tags':'four four_month timeline-event green light bottom-half'
     },
 ]

@@ -2,11 +2,12 @@
 #code-projects, #art-projects {
   display: flex;
   flex-direction: row;
-  max-width: 1000px;
   position: relative;
   margin: auto;
   align-items: center;  
   justify-content: center;
+  width: 75vw;
+  background-color: #04202b4d;
 }
 
 .slide {

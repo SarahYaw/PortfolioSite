@@ -5,7 +5,7 @@
 <button class="prev" onclick="plusSlides(-1, {{set}})">&#10094;</button>
 {% for project in projects %}
     <div class="slide">
-        <h3><a href="{{ project.link }}" target="_blank">{{ project.name }}</a></h3>
+        <h2><a href="{{ project.link }}" target="_blank">{{ project.name }}</a></h2>
         <div class="picture">
             <img src="{{ project.src }}" alt="{{ project.alt }}">
             <p>{{project.caption}}</p>
