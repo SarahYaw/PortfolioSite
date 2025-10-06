@@ -43,11 +43,13 @@ nav ul a.selected {
 main {
     padding: 5rem 2rem 2rem 2rem;
     min-height: 88vh; /* Ensure main takes up enough space */
+    max-width: 1920px;
+    margin:auto
 }
 main p {
-    font-weight: bold;
     font-size: large;
-    margin: 1% 0 1% 0;
+    margin: 0.5em 0 0.5em 0;
+    line-height: 1.5;
 }
 main a {
     color: steelblue;
@@ -95,10 +97,10 @@ main a {
     margin: 5px 0 0 0;
 }
 .picture.home {
-    width: 300px;
+    width: 400px;
 
     img {
-        width: 300px
+        width: 400px
     }
 }
 .contact-border {

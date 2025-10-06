@@ -66,7 +66,7 @@ h2 {
             position: fixed;
             top: 50%;
             left: 50%;
-            transform: translate(-5%, -40%);
+            transform: translate(-5%, -30%);
             box-shadow: 4px 4px 9px 1px rgba(0, 0, 0, 0.4);
 
             .title {
@@ -89,8 +89,9 @@ h2 {
                 z-index: 10;
             
                 p {
-                    font-weight:unset;
-                    margin: 10px 0;
+                    font-weight: unset;
+                    margin: 0.5em 0;
+                    line-height: 1.5;
                 }
             }
         }
