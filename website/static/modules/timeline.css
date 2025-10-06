@@ -51,6 +51,7 @@ h2 {
         position:relative;
         list-style-type: none;
         border-left: solid 75px #04202b;
+        cursor: pointer;
 
         .card {
             margin: 0;
@@ -65,7 +66,8 @@ h2 {
             position: fixed;
             top: 50%;
             left: 50%;
-            transform: translate(-5%, -50%);
+            transform: translate(-5%, -40%);
+            box-shadow: 4px 4px 9px 1px rgba(0, 0, 0, 0.4);
 
             .title {
                 font-weight: bold;
@@ -75,8 +77,11 @@ h2 {
             }
 
             a { 
-                color: #ecfaff;
+                color: #ecfaff !important;
                 text-decoration: underline;
+                &:visited {
+                  color: #ecfaff !important;  
+                }
             }
 
             .card-body {
@@ -85,7 +90,7 @@ h2 {
             
                 p {
                     font-weight:unset;
-                    margin: 5px 0;
+                    margin: 10px 0;
                 }
             }
         }
@@ -198,10 +203,7 @@ h2 {
             height: calc(44px * 5.5);
         }
     }
-
-    @media screen and (max-width: 900px) {
-        ul li div {
-            width: 250px;
-        }
-    }
+}
+.mobile-timeline {
+    display: none;
 }

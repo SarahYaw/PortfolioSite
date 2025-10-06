@@ -21,6 +21,7 @@ def about():
     context['timeline_items_2'] = timeline_items_2
     context['timeline_items_3'] = timeline_items_3
     context['timeline_items_4'] = timeline_items_4
+    context['mobile_timeline'] = mobile_timeline
     return render_template('about.html', context=context)
 
 @bp.route('/projects')
@@ -29,10 +30,5 @@ def projects():
     context['code_projects'] = code_projects
     context['art_projects'] = art_projects
     return render_template('projects.html', context=context)
-
-
-@bp.route('/contact')
-def contact():
-    return render_template('contact.html')
 
 # Additional routes can be added here

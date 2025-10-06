@@ -10,7 +10,7 @@
             <p>Full Stack Web Developer; MS in Computer Science from EMU</p>
         </span>
         <span>
-            <h2>Experience &nbsp; &nbsp; <span style="font-size: medium">(mouse over a bar for more details)</span></h2>
+            <h2>Experience &nbsp; &nbsp; <span class="timeline-hint" style="font-size: medium">(click a bar for more details)</span></h2>
             {# timeline help from https://codepen.io/alvarotrigo/pen/QWqLEGL #}
             <div class="timeline-container">
                 {% from "timelines.html" import timelines %}
@@ -19,10 +19,20 @@
                 {{ timelines(context.timeline_items_3, 'three') }}
                 {{ timelines(context.timeline_items_4, 'four') }}
                 <script>
+                    document.querySelector('.card').classList.toggle('squished', false)
                     function togglePopup(item) {
                         item.querySelector('.card').classList.toggle('squished')
+                        document.querySelectorAll('.card').forEach((other) => {
+                            if (other.parentElement != item) {
+                                other.classList.toggle('squished', true)
+                            } 
+                        })
                     }
                 </script>
+            </div>
+            <div class="mobile-timeline">
+                {% from "mobileTimelines.html" import mobiletimelines %}
+                {{ mobiletimelines(context.mobile_timeline) }}
             </div>
         </span>
     </div>

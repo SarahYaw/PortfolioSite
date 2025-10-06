@@ -27,3 +27,14 @@ function showSlides(newId, codeOrArt) {
     slideIndex[codeOrArt] = newId
     slideSet[slideIndex[codeOrArt]].style.display = "flex";
 }
+
+function enlargeImg(item) {
+    item.classList.toggle('big')
+    if (item.classList.contains('big')) {
+        item.style.transform = "scale(1.5)";
+        item.style.transition = "transform 0.25s ease";
+    } else {
+        item.style.transform = "scale(1)";
+        item.style.transition = "transform 0.25s ease";
+    }
+}

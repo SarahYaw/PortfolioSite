@@ -1,9 +1,13 @@
+html {
+    background-image: radial-gradient(circle at center, #ff00601c, #ffff001c, #ecfaff 60%); /* , url('./assets/binary.png'); */
+    background-size: 100vw 210vh;
+}
 body {
-    background-color: #ecfaff;
+    /* background-color: #ecfaff; */
     color: #04202b;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    height: 100%;
+    height: 100vh;
 }
 nav {
     background-color: #04202b;
@@ -38,7 +42,7 @@ nav ul a.selected {
 }
 main {
     padding: 5rem 2rem 2rem 2rem;
-    min-height: 80vh; /* Ensure main takes up enough space */
+    min-height: 88vh; /* Ensure main takes up enough space */
 }
 main p {
     font-weight: bold;
@@ -46,11 +50,11 @@ main p {
     margin: 1% 0 1% 0;
 }
 main a {
-    color: #325c80;
+    color: steelblue;
     text-decoration: underline;
-}
-main h1 {
-    margin: 0 5px 0 5px;
+    &:visited {
+        color: steelblue;
+    }
 }
 .float-right{
     float: right;
@@ -59,6 +63,10 @@ main h1 {
 .float-left{
     float: left;
     margin: 0 0 10px 10px;
+}
+.float-bottom {
+    position: absolute;
+    bottom: 5%;
 }
 .d-none {
     display: none !important;
@@ -72,10 +80,11 @@ main h1 {
     padding: 10px;
     display: flex;
     flex-direction: column;
-    box-shadow: rgba(0, 0, 0, 0.1) 5px 5px 5px;
+    box-shadow: rgba(0, 0, 0, 0.4) 5px 5px 5px;
     margin: 0 50px 0 50px;
 }
 .picture img {
+    display: block;
     width: 500px;
     height: auto;
     margin: 0 auto;
@@ -92,8 +101,125 @@ main h1 {
         width: 300px
     }
 }
+.contact-border {
+    position: absolute;
+    right: 3vw;
+    background-image: linear-gradient(to right, #04202b, lightblue, lavenderblush, khaki); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    padding: 10px;
+}
+.contact {
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: floralwhite;
+
+    h1 {
+        margin: 5px 0 5px 0;
+    }
+}
 footer{
     position: fixed;
     bottom:0;
+    right: 10px;
     font-size: x-small;
+}
+
+@media only screen and (max-width: 700px) {
+    main {
+        padding: 3rem 1rem 1rem 1rem !important;
+    }
+    .contact-border,
+    .float-bottom {
+        position: relative;
+    }
+    .contact h1 {
+        font-size: larger;
+    }
+    .picture.home,
+    .timeline-container,
+    .timeline-hint {
+        display:none !important;
+    }
+    .mobile-timeline {
+        display: block !important;
+        .card {
+            background-color: #04202b;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+            
+            &.empty {
+                display: none;
+            }
+            &.zero_month,
+            &.one_month,
+            &.two_month,
+            &.three_mont,
+            &.four_month,
+            &.five_month,
+            &.six_month,
+            &.eight_month,
+            &.ten_month,
+            &.eleven_month,
+            &.thirteen_month,
+            &.fourteen_month,
+            &.sixteen_month,
+            &.thirty_one_month,
+            &.thirty_two_month,
+            &.thirty_four_month,
+            &.thirty_six_month,
+            &.thirty_seven_month, 
+            &.fourty_four_month {
+                margin: 10px 0;
+            }
+            
+            &.green {
+                background-color: #03562d;
+            }
+            &.orange {
+                background-color: #b75105;
+            }
+            &.purple {
+                background-color: #672477;
+            }
+
+            a { 
+                color: #ecfaff !important;
+                text-decoration: underline;
+                &:visited {
+                  color: #ecfaff !important;  
+                }
+            }
+        }
+    }
+    h2 {
+        margin: 10px 0 !important;
+    }
+    #code-projects,
+    #art-projects {
+        margin: 2px !important;
+        width: auto !important;
+        padding: 10px 0 !important;
+
+        .picture {
+            margin: 10px 2px !important;
+            width: auto !important;
+            img {
+                margin: 0;
+                width: 100% !important;
+            }
+        }
+        .slide {
+            margin: 0;
+            width: 100%;
+        }
+        .prev, .next {
+            padding: 8px;;
+        }
+        h2 {
+            font-size: medium;
+        }
+    }
 }

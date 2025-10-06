@@ -1,0 +1,22 @@
+{% macro mobiletimelines(timeline) %}
+    {% for item in timeline %}
+        <div class="card {{item.tags}}">
+            {% if item.link %}
+                <p class="title"><a href={{item.link}} target="_blank">{{item.title}}</a></p>
+            {% else %}
+                <p class="title">{{item.title}}</p>
+            {% endif %}
+            <h4>{{item.employer}}</h4>
+            <h4>{{item.duration}}</h4>
+            {% if item.location %}
+                <h4>{{item.location}}</h4>
+            {% endif %}
+            {% if item.description %}
+                <p> &nbsp; &nbsp; {{item.description}}</p>
+            {% endif %}
+            {% if item.skills %}
+                <p><strong>Skills:</strong> {{item.skills}}</p>
+            {% endif %}
+        </div>
+    {% endfor %}
+{% endmacro %}

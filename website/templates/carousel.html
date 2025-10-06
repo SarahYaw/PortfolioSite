@@ -11,12 +11,11 @@
         <h2>{{ project.name }}</h2>
         {% endif %}
         <div class="picture">
-            <img src="{{ project.src }}" alt="{{ project.alt }}">
+            <img src="{{ project.src }}" alt="{{ project.alt }}" onclick="enlargeImg(this)">
             <p>{{project.caption}}</p>
         </div>
         <p> &nbsp; &nbsp; {{ project.description }}</p>
-        <h3 style="width:100%; margin: 5px">Skills:</h3>
-        <p>{{ project.skills }}</p>
+        <p><span style="font-weight: bolder">Skills: </span>{{ project.skills }}</p>
     </div>
 {% endfor %}
 <button class="next" onclick="plusSlides(1, {{set}})">&#10095;</button>
