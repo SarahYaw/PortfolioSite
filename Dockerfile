@@ -1,16 +1,20 @@
-FROM python:3.11
+FROM python:3.11-slim
 
 # Set the working directory
 WORKDIR /app
 
 # Copy the current directory contents into the container at /app
-COPY . ./
+COPY requirements.txt .
 
 # Install the required dependencies
-RUN pip install -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
+
+# copy app code
+COPY . .
 
 # Make port 8080 available to the world outside this container
+ENV PORT=8080
 EXPOSE 8080
 
 # Run app.py when the container launches
-CMD ["gunicorn", "-w", "4", "-b", "0.0.0.0:8080", "app"]
+CMD ["gunicorn", "-b", ":8080", "wsgi:app"]
