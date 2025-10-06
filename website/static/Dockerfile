@@ -1,17 +1,16 @@
-    # Use an official lightweight Python image
-    FROM python:3.9-slim  
+FROM python:3.11
 
-    # Set the working directory
-    WORKDIR /app  
+# Set the working directory
+WORKDIR /app
 
-    # Copy project files into the container
-    COPY . /app  
+# Copy the current directory contents into the container at /app
+COPY . ./
 
-    # Install dependencies
-    RUN pip install --no-cache-dir -r requirements.txt
+# Install the required dependencies
+RUN pip install -r requirements.txt
 
-    # Expose port 8080 for Flask
-    EXPOSE 8080  
+# Make port 8080 available to the world outside this container
+EXPOSE 8080
 
-    # Command to run the app
-    CMD ["python", "app.py"]
+# Run app.py when the container launches
+CMD python app.py
