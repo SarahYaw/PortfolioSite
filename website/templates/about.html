@@ -19,11 +19,12 @@
                 {{ timelines(context.timeline_items_3, 'three') }}
                 {{ timelines(context.timeline_items_4, 'four') }}
                 <script>
-                    document.querySelector('.card').classList.toggle('squished', false)
+                    document.querySelector('.card.current').classList.toggle('squished', false)
                     function togglePopup(item) {
-                        item.querySelector('.card').classList.toggle('squished')
+                        id = item.id.split('_')[0]
+                        document.getElementById(id).classList.toggle('squished')
                         document.querySelectorAll('.card').forEach((other) => {
-                            if (other.parentElement != item) {
+                            if (other.id != id) {
                                 other.classList.toggle('squished', true)
                             } 
                         })

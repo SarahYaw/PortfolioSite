@@ -1,31 +1,28 @@
 <!-- assistance from https://codepen.io/alvarotrigo/pen/QWqLEGL -->
 {% macro timelines(timeline, number) %}
 <div class="timeline {{number}}">
-    <ul class="timeline-events">
-        {% for item in timeline %}
-        <li class="{{item.tags}}" onclick="togglePopup(this)">
-            <div class="card squished">
-                {% if item.link %}
-                <p class="title"><a href={{item.link}} target="_blank">{{item.title}}</a></p>
-                {% else %}
-                <p class="title">{{item.title}}</p>
+    {% for item in timeline %}
+        <div class="{{item.bar_tags}}" onclick="togglePopup(this)" id="{{item.id}}_button"></div>
+        <div class="card squished {{item.card_tags}}" id="{{item.id}}" onclick="togglePopup(this)">
+            {% if item.link %}
+            <p class="title"><a href={{item.link}} target="_blank">{{item.title}}</a></p>
+            {% else %}
+            <p class="title">{{item.title}}</p>
+            {% endif %}
+                <h4>{{item.employer}}</h4>
+                <h4>{{item.duration}}</h4>
+                {% if item.location %}
+                <h4>{{item.location}}</h4>
                 {% endif %}
-                    <h4>{{item.employer}}</h4>
-                    <h4>{{item.duration}}</h4>
-                    {% if item.location %}
-                    <h4>{{item.location}}</h4>
+            {% if item.description %}
+                <div class="card-body">
+                    <p> &nbsp; &nbsp; {{item.description}}</p>
+                    {% if item.skills %}
+                    <p><strong>Skills:</strong> {{item.skills}}</p>
                     {% endif %}
-                {% if item.description %}
-                    <div class="card-body">
-                        <p> &nbsp; &nbsp; {{item.description}}</p>
-                        {% if item.skills %}
-                        <p><strong>Skills:</strong> {{item.skills}}</p>
-                        {% endif %}
-                    </div>
-                {% endif %}
-            </div>
-        </li>
-        {% endfor %}
-    </ul>
+                </div>
+            {% endif %}
+        </div>
+    {% endfor %}
 </div>
 {% endmacro %}

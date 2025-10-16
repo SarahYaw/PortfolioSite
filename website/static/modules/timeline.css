@@ -6,9 +6,9 @@ h2 {
 .timeline-container {
     padding-left: 10px;
     display: grid;
-    grid-template-columns: 150px 150px 150px 150px;
-    height: 60vh;
-    width: fit-content;
+    width: 60vw;
+    grid-template-columns: 10% 10% 10% 10%;
+    gap: 5%;
 
     .squished {
         width: 0px !important;
@@ -39,114 +39,11 @@ h2 {
         left: 40px;
     }
 
-    *,
-    *::before,
-    *::after {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    ul li {
-        position:relative;
+    .timeline-event {
+        position: relative;
         list-style-type: none;
-        border-left: solid 75px #04202b;
         cursor: pointer;
-
-        .card {
-            margin: 0;
-            width: 500px;
-            min-height: 300px;
-            padding: 15px;
-            border-radius: 5px;
-            background-color: #04202b;
-            color: #ecfaff;
-            border: none;
-            z-index: 1000;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-5%, -30%);
-            box-shadow: 4px 4px 9px 1px rgba(0, 0, 0, 0.4);
-
-            .title {
-                font-weight: bold;
-                font-size: 18px;
-                display: block;
-                margin-bottom: 10px;
-            }
-
-            a { 
-                color: #ecfaff !important;
-                text-decoration: underline;
-                &:visited {
-                  color: #ecfaff !important;  
-                }
-            }
-
-            .card-body {
-                text-align: left;
-                z-index: 10;
-            
-                p {
-                    font-weight: unset;
-                    margin: 0.5em 0;
-                    line-height: 1.5;
-                }
-            }
-        }
-
-        
-        &.empty { 
-            visibility: hidden;
-        }
-
-        &.green {
-            border-color: #03562d;
-            color: #ecfaff;
-
-            .card {
-                background-color: #03562d;
-            }
-            &.light {
-                border-color: #4d9772;
-
-                .card {
-                    background-color: #4d9772;
-                }
-            }
-        }
-
-        &.purple {
-            border-color: #672477;
-            color: #ecfaff;
-
-            .card {
-                background-color: #672477;
-            }
-            &.light {
-                border-color: #614b67;
-
-                .card {
-                    background-color: #614b67;
-                }
-            }
-        }
-
-        &.orange {
-            border-color: #b75105;
-            
-            .card {
-                background-color: #b75105;
-            }
-            &.light {
-                border-color: #8f6546;
-
-                .card {
-                    background-color: #8f6546;
-                }
-            }
-        }
+        background-color: #04202b;
         
         &.zero_month,
         &.one_month {
@@ -203,6 +100,80 @@ h2 {
         &.fourty_four_month {
             height: calc(44px * 5.5);
         }
+    }
+    .card {
+        margin: 0;
+        width: 500px;
+        min-height: 300px;
+        padding: 0 15px;
+        border-radius: 5px;
+        background-color: #04202b;
+        color: #ecfaff;
+        border: none;
+        z-index: 1000;
+        position: absolute;
+        top: 70vh;
+        right: 2vw;
+        box-shadow: 4px 4px 9px 1px rgba(0, 0, 0, 0.4);
+
+        .title {
+            font-weight: bold;
+            font-size: 18px;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        a { 
+            color: #ecfaff !important;
+            text-decoration: underline;
+            &:visited {
+            color: #ecfaff !important;  
+            }
+        }
+
+        .card-body {
+            text-align: left;
+            z-index: 10;
+        
+            p {
+                font-weight: unset;
+                margin: 0.5em 0;
+                line-height: 1.5;
+            }
+        }
+
+        h4 {
+            margin: 0.5em 0 0.2em 0;
+        }
+    }
+
+    
+    .green {
+        background-color: #03562d !important;
+        
+        &.light {
+            background-color: #4d9772 !important;
+        }
+    }
+
+    .purple {
+        background-color: #672477 !important;
+
+        &.light {
+            background-color: #614b67 !important;
+        }
+    }
+
+    .orange {
+        background-color: #b75105 !important;
+
+        &.light {
+            background-color: #8f6546 !important;
+        }
+    }
+    
+    .empty { 
+        visibility: hidden;
     }
 }
 .mobile-timeline {

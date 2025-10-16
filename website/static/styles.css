@@ -3,7 +3,6 @@ html {
     background-size: 100vw 210vh;
 }
 body {
-    /* background-color: #ecfaff; */
     color: #04202b;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -16,7 +15,7 @@ nav {
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 1000;
+    z-index: 3000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 nav ul {
@@ -60,11 +59,11 @@ main a {
 }
 .float-right{
     float: right;
-    margin: 0 0 10px 10px;
+    margin: 0 0 2vh 2vw !important;
 }
 .float-left{
     float: left;
-    margin: 0 0 10px 10px;
+    margin: 0 2vw 2vh 0 !important;
 }
 .float-bottom {
     position: absolute;
@@ -83,7 +82,6 @@ main a {
     display: flex;
     flex-direction: column;
     box-shadow: rgba(0, 0, 0, 0.4) 5px 5px 5px;
-    margin: 0 50px 0 50px;
 }
 .picture img {
     display: block;
@@ -97,15 +95,14 @@ main a {
     margin: 5px 0 0 0;
 }
 .picture.home {
-    width: 400px;
+    width: 200px;
 
     img {
-        width: 400px
+        width: 200px
     }
 }
 .contact-border {
-    position: absolute;
-    right: 3vw;
+    margin: 1vh 1vw;
     background-image: linear-gradient(to right, #04202b, lightblue, lavenderblush, khaki); 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
     border-radius: 10px;
@@ -117,7 +114,7 @@ main a {
     border-radius: 10px;
     background-color: floralwhite;
 
-    h1 {
+    h2 {
         margin: 5px 0 5px 0;
     }
 }

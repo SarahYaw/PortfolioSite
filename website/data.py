@@ -88,7 +88,9 @@ timeline_items_1 = [
         'location': 'United States · Remote',
         'description': "During my time here I  am responsible for all tech related issues and advances. This involves maintaining and improving Rock Solid's website and customer-facing digital tools, development and management of internal dashboards to improve broker and dispatcher workflow., troubleshooting and tech support as issues arise",
         'skills': 'Application Development · Application Programming Interfaces (API) · Back-End Web Development · Bootstrap (Framework) · Cascading Style Sheets (CSS) · Communication · Database Design · Front-End Development · Full-Stack Development · Git · Graphic Design · HTML · HTML5 · JavaScript · Databases · Problem Solving · Programming · Programming Languages · Project Development · Project Planning · Requirements Gathering · SQL · Software Development · User Experience (UX) · User Interface Design · Visual Studio · Web Application Development · Web Applications · Web Development · Wireframing · Google Cloud Suite',
-        'tags':'one four_month timeline-event orange current'
+        'bar_tags':'one four_month timeline-event orange current',
+        'card_tags':'orange current',
+        'id': 'it'
     },
     {
         'link': '',
@@ -97,7 +99,8 @@ timeline_items_1 = [
         'duration':'',
         'description': '',
         'skills': '',
-        'tags':'empty one_month'
+        'bar_tags':'empty timeline-event one_month',
+        'card_tags':'empty',
     },
     {
         'link': 'https://github.com/SarahYaw/simpleFormToPDF',
@@ -106,7 +109,9 @@ timeline_items_1 = [
         'duration':'Mar 2025 - Apr 2025',
         'description': 'Import a csv of questions and answers into this program, answer the questions, export a pdf of the filled out form. I made this for a relative that fills out the same form weekly and struggles with making it look nice on the PDF form so this is an effort to auto-generate the PDF so they can just click done and email it off.',
         'skills': 'Python (Programming Language) · Tkinter · Project Planning · Application Development · Requirements Gathering',
-        'tags':'one one_month timeline-event'
+        'bar_tags':'one one_month timeline-event',
+        'card_tags':'',
+        'id': 'pdf'
     },
     {
         'title': 'Full-stack Developer',
@@ -115,7 +120,9 @@ timeline_items_1 = [
         'location':'United States · Remote',
         'description': 'Development and maintenance across multiple software projects. Most using a Vue.js frontend and Django python or a PHP backend.',
         'skills': 'Front-End Development · HTML · REST APIs · Python · Back-End Web Development · Vuetify · TypeScript · Communication · Web Applications · HTML5 · Full-Stack Development · Jira · Problem Solving · Django REST Framework · Trello · Application Development · User Interface Design · JavaScript · PHP · Programming Languages · Software Development · Web Application Development · Git · Project Development · Software as a Service (SaaS) · Django · Visual Studio · Cascading Style Sheets (CSS) · Node.js · Database Design · Web Development · User Experience (UX) · Wireframing · Application Programming Interfaces (API) · Vue.js · GitHub',
-        'tags':'one thirty_seven_month timeline-event purple'
+        'bar_tags':'one thirty_seven_month timeline-event purple',
+        'card_tags':'purple',
+        'id': 'fsdev'
     },
     {
         'link': '',
@@ -124,14 +131,17 @@ timeline_items_1 = [
         'duration':'',
         'description': '',
         'skills': '',
-        'tags':'empty two_month'
+        'bar_tags':'empty timeline-event two_month',
+        'card_tags':'empty',
     },
     {
         'title': "Master's degree, Computer Science",
         'location': 'Eastern Michigan University',
         'duration': 'Sep 2020 - Dec 2021',
         'description':"Due to keeping a 3.9ish average, I was eligible for a Graduate Assistant position, which pays for your graduate school curriculum along with an hourly pay. Because of that, I covered my grad tuition and boarding as well. I was off-handedly offered the chance to teach an undergrad introductory class, but the 2020 pandemic happened and the univerity stuck with their staff for teaching.",
-        'tags':'one sixteen_month timeline-event green'
+        'bar_tags':'one sixteen_month timeline-event green',
+        'card_tags':'green',
+        'id': 'masters'
     },
     {
         'link': '',
@@ -140,7 +150,8 @@ timeline_items_1 = [
         'duration':'',
         'description': '',
         'skills': '',
-        'tags':'empty four_month'
+        'bar_tags':'empty timeline-event four_month',
+        'card_tags':'empty',
     },
     {
         'title': "Bachelors of Science degree, Computer Science",
@@ -148,7 +159,9 @@ timeline_items_1 = [
         'location': 'Eastern Michigan University',
         'duration': 'Sep 2016 - Apr 2020',
         'description': "I'm pretty shy talking about it, but I was lucky enough to get a full ride scholarship for undergrad. Because of that, I was able to take some 'for fun' classes as well! Those include watercolor, graphic design, astronomy, and botany classes and more.",
-        'tags':'one fourty_four_month timeline-event green'
+        'bar_tags':'one fourty_four_month timeline-event green',
+        'card_tags':'green',
+        'id': 'bachelors'
     }
 ]
 timeline_items_2 = [
@@ -159,7 +172,9 @@ timeline_items_2 = [
         'duration':'Aug 2025 - Present',
         'description': "Just a nice little portfolio website to show off projects and summaries, you're looking at it now! ヾ(＾∇＾)",
         'skills': 'HTML · CSS · JavaScript · Python · Python Flask · Web Applications · User Interface Design · Git · Visual Studio · User Experience (UX)',
-        'tags':'two two_month timeline-event'
+        'bar_tags':'two two_month timeline-event',
+        'card_tags':'',
+        'id': 'portfolio'
     },
     {
         'link': '',
@@ -168,7 +183,8 @@ timeline_items_2 = [
         'duration':'',
         'description': '',
         'skills': '',
-        'tags':'empty three_month'
+        'bar_tags':'empty timeline-event three_month',
+        'card_tags':'empty',
     },
     {
         'link': 'https://github.com/SarahYaw/MedManager',
@@ -177,7 +193,9 @@ timeline_items_2 = [
         'duration':'Apr 2025 - May 2025',
         'description': "Webpage that allows you to enter meds for it to track when you're due for a refill, how often you take what dosage, who prescribed it, etc.",
         'skills': 'React.js · Node.js · Tailwind CSS · TypeScript · User Interface Design · LoopBack.io',
-        'tags':'two one_month timeline-event'
+        'bar_tags':'two one_month timeline-event',
+        'card_tags':'',
+        'id': 'meds'
     },
     {
         'link': "https://futurimedia.com/solutions/audioai/",
@@ -186,7 +204,9 @@ timeline_items_2 = [
         'duration':'Apr 2022 - Mar 2025',
         'description': 'AI empowered web software that allows instantaneous production of audio commercials, spec spots, and other clips to be played over radio.',
         'skills': 'GitHub · Wireframing · Node.js · Visual Studio · Web Applications · Communication · Bootstrap (Framework) · Web Application Development · Front-End Development · Software as a Service (SaaS) · JavaScript · Application Development · Full-Stack Development · Application Programming Interfaces (API) · Cascading Style Sheets (CSS) · Git · TypeScript · Django · Project Development · REST APIs · Programming Languages · Software Development · User Experience (UX) · Python (Programming Language) · Back-End Web Development · HTML · Vue.js · Programming · Web Development',
-        'tags':'two thirty_six_month timeline-event purple light'
+        'bar_tags':'two thirty_six_month timeline-event purple light',
+        'card_tags':'purple light',
+        'id': 'aai'
     },
     {
         'link': '',
@@ -195,7 +215,8 @@ timeline_items_2 = [
         'duration':'',
         'description': '',
         'skills': '',
-        'tags':'empty three_month'
+        'bar_tags':'empty timeline-event three_month',
+        'card_tags':'empty',
     },
     {
         'title': 'Graduate Assistant',
@@ -204,7 +225,9 @@ timeline_items_2 = [
         'location': 'Ypsilanti, Michigan, United States',
         'description':'As a Graduate Assistant, I was responsible for grading and doing what I could to help the students learn the curriculum. I gave feedback on learning goal progression, assisted students during class with learning to code as well as any technical difficulties, assisted in development of assignments that ensure a solid understanding of foundational concepts for the class, and hosted tutoring hours outside of normal class functioning to assist other students with any questions they may have.',
         'skills':'Communication · Computer Science · Java · Problem Solving · Teaching · Programming Languages · Node.js',
-        'tags':'two sixteen_month timeline-event green bottom-half'
+        'bar_tags':'two sixteen_month timeline-event green',
+        'card_tags':'green',
+        'id': 'GA'
     }, 
     {
         'link': '',
@@ -213,7 +236,8 @@ timeline_items_2 = [
         'duration':'',
         'description': '',
         'skills': '',
-        'tags':'empty four_month'
+        'bar_tags':'empty timeline-event four_month',
+        'card_tags':'empty',
     },
     {
         'title': 'Graphic Designer',
@@ -222,7 +246,9 @@ timeline_items_2 = [
         'location': 'Ypsilanti, Michigan, United States',
         'description': "During my time as the graphic designer at EMU's The Honors College, I did a lot of different tasks to keep up to date with the latest requirements. I collaborated with the programming team to create printed event flyers and social media graphics, collaborated with the computing team to create accessible user interfaces for applications,  designed pamphlets to advertise and inform students about various events being hosted by The Honors College,  drafted scholarship application forms to ensure efficient and accessible application and data entry, and helped promote The Honors College to the students at EMU in an appealing and accessible way.",
         'skills': 'Communication · Social Media · Teaching · Graphic Design · Social Media Graphic Design',
-        'tags':'two thirty_two_month timeline-event green bottom-half'
+        'bar_tags':'two thirty_two_month timeline-event green',
+        'card_tags':'green',
+        'id': 'graphics'
     },
 ]
 timeline_items_3 = [
@@ -233,7 +259,8 @@ timeline_items_3 = [
         'duration':'',
         'description': '',
         'skills': '',
-        'tags':'empty six_month'
+        'bar_tags':'empty timeline-event six_month',
+        'card_tags':'empty',
     },
     {
         'link': 'https://futurimedia.com/solutions/spoton/',
@@ -242,7 +269,9 @@ timeline_items_3 = [
         'duration':'Aug 2022 - Mar 2025',
         'description': 'One-Click spec spots and audio commercials. The goal of this project was to make a technology that allows radio talent to submit their voice for AI voice replication and have the machine read their commercials so they can focus on the content of the show.',
         'skills': 'GitHub · Wireframing · Node.js · Visual Studio · Web Applications · Communication · Bootstrap (Framework) · Web Application Development · Front-End Development · Software as a Service (SaaS) · JavaScript · Application Development · Full-Stack Development · Application Programming Interfaces (API) · Cascading Style Sheets (CSS) · Git · TypeScript · Django · Project Development · REST APIs · Programming Languages · Software Development · User Experience (UX) · Python (Programming Language) · Back-End Web Development · HTML · Programming · Web Development',
-        'tags':'three thirty_two_month timeline-event purple light'
+        'bar_tags':'three thirty_two_month timeline-event purple light',
+        'card_tags':'purple light',
+        'id': 'spoton'
     },
     {
         'link': '',
@@ -251,7 +280,8 @@ timeline_items_3 = [
         'duration':'',
         'description': '',
         'skills': '',
-        'tags':'empty eleven_month'
+        'bar_tags':'empty timeline-event eleven_month',
+        'card_tags':'empty',
     },
     {
         'title': 'Web Design Intern',
@@ -260,7 +290,9 @@ timeline_items_3 = [
         'location': 'Brighton, Michigan, United States',
         'description': 'During my time here I re-built the company website using Drupal and communicated with different employees beyond the owners to ensure a well-rounded design that advertised the company as they wanted.',
         'skills': 'Communication · Problem Solving · Project Development · Programming · Wireframing',
-        'tags':'three five_month timeline-event orange'
+        'bar_tags':'three five_month timeline-event orange',
+        'card_tags':'orange',
+        'id': 'intern'
     },
     {
         'link': '',
@@ -269,7 +301,8 @@ timeline_items_3 = [
         'duration':'',
         'description': '',
         'skills': '',
-        'tags':'empty eleven_month'
+        'bar_tags':'empty timeline-event eleven_month',
+        'card_tags':'empty',
     },
     {
         'title': 'Teaching Assistant',
@@ -278,7 +311,9 @@ timeline_items_3 = [
         'location': 'Ypsilanti, Michigan, United States',
         'description': 'I was a teaching assistant for a semester in an introductory computer science class. This involved grading homework assignments and projects to give feedback on learning goal progression, assisting students during class with learning to code as well as any technical difficulties, and assisting in development of assignments that ensure a solid understanding of foundational concepts for the class.',
         'skills': 'Communication · Computer Science · HTML5 · Java · Problem Solving · JavaScript · Programming Languages · Cascading Style Sheets (CSS)',
-        'tags':'three four_month timeline-event green bottom-half'
+        'bartags':'three four_month timeline-event green',
+        'card_tags':'grteen',
+        'id': 'TA'
     },
     {
         'link': 'https://github.com/crypt0d1v3r/Checkers',
@@ -287,7 +322,9 @@ timeline_items_3 = [
         'duration': 'Sep 2019 - Dec 2019',
         'description': 'A program that uses AI principals to play checkers against the user. I chiefly did the user Interface for this project.',
         'skills': ' Java · GitHub · Communication · Git · Software Development · Graphic Design · Programming',
-        'tags':'four three_month timeline-event green light bottom-half'
+        'bar_tags':'four three_month timeline-event green light',
+        'card_tags':'green light',
+        'id': 'checkers'
     },
     {
         'link': '',
@@ -296,19 +333,19 @@ timeline_items_3 = [
         'duration':'',
         'description': '',
         'skills': '',
-        'tags':'empty fourteen_month'
+        'bar_tags':'empty timeline-event fourteen_month',
+        'card_tags':'empty',
     },
     {
         'title': 'Teaching Assistant',
         'employer': 'Eastern Michigan University',
         'duration': 'Jun 2018 - Jun 2018',
         'location': 'Ypsilanti, Michigan, United States',
-        'description':
-        '''
-            Teaching assistant for a week-long camp called Bits&Bytes. We taught middle school students basic computer science concepts to introduce them to STEM career choices. This involved creating lesson plans that teach introductory concepts and skills and maintain engagement at a middle school level.
-        ''',
+        'description': 'Teaching assistant for a week-long camp called Bits&Bytes. We taught middle school students basic computer science concepts to introduce them to STEM career choices. This involved creating lesson plans that teach introductory concepts and skills and maintain engagement at a middle school level.',
         'skills': 'HTML · Communication · Computer Science · Java · Problem Solving · Teaching · Programming Languages',
-        'tags':'four zero_month timeline-event bottom-half'
+        'bar_tags':'four zero_month timeline-event',
+        'card_tags':'',
+        'id': 'camp'
     },
 ]
 timeline_items_4 = [
@@ -319,7 +356,8 @@ timeline_items_4 = [
         'duration':'',
         'description': '',
         'skills': '',
-        'tags':'empty six_month'
+        'bar_tags':'empty timeline-event six_month',
+        'card_tags':'empty',
     },
     {
         'link': 'https://futurimedia.com/solutions/beacon/',
@@ -328,7 +366,9 @@ timeline_items_4 = [
         'duration':'Mar 2024 - Mar 2025',
         'description': 'Safety alert system that sends audio and text emergency and warning alerts via radio and downloadable mobile application by location from multiple official sources.',
         'skills': 'GitHub · Wireframing · Node.js · Visual Studio · Web Applications · Communication · Vuetify · Web Application Development · Front-End Development · Software as a Service (SaaS) · Application Development · Full-Stack Development · Cascading Style Sheets (CSS) · Git · Project Development · REST APIs · Programming Languages · Software Development · User Experience (UX) · Python (Programming Language) · HTML · Vue.js · Programming · Web Development',
-        'tags':'four thirteen_month timeline-event purple light'
+        'bar_tags':'four thirteen_month timeline-event purple light',
+        'card_tags':'purple light',
+        'id': 'beacon'
     }, 
     {
         'link': '',
@@ -337,7 +377,8 @@ timeline_items_4 = [
         'duration':'',
         'description': '',
         'skills': '',
-        'tags':'empty thirty_four_month'
+        'bar_tags':'empty timeline-event thirty_four_month',
+        'card_tags':'empty',
     },
     {
         'link': 'https://github.com/SarahYaw/PRNG',
@@ -346,7 +387,9 @@ timeline_items_4 = [
         'duration': 'Jan 2021 - Apr 2021',
         'description': 'A program of different PRNG algorithms researched and coded up for an Independent Study.',
         'skills': 'Java · GitHub · Computer Science · Programming',
-        'tags':'four four_month timeline-event green light'
+        'bar_tags':'four four_month timeline-event green light',
+        'card_tags':'green light',
+        'id': 'prng'
     },
     {
         'link': '',
@@ -355,7 +398,8 @@ timeline_items_4 = [
         'duration':'',
         'description': '',
         'skills': '',
-        'tags':'empty eight_month'
+        'bar_tags':'empty timeline-event eight_month',
+        'card_tags':'empty',
     },
     {
         'link':'https://www.facebook.com/share/p/1Cgkuxb2fD/',
@@ -364,7 +408,9 @@ timeline_items_4 = [
         'duration': 'Jan 2020 - Apr 2020',
         'description': 'Program that predicts crop yields for Bay County Michigan given precipitation, temperature, and yield data from previous years. This was a project for my Big Data class. The focus was on handling large amounts of data and managing it efficiently.',
         'skills': 'Java · GitHub · Computer Science · Software Development · Programming',
-        'tags':'four four_month timeline-event green light bottom-half'
+        'bar_tags':'four four_month timeline-event green light',
+        'card_tags':'green light',
+        'id': 'crops'
     },
 ]
 mobile_timeline = [
