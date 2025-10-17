@@ -14,10 +14,12 @@
 
   .picture {
     margin: 20px;
-    width: 50vw;
+    height: 50vh;
+    width: min-content;
 
     img {
-      width: 50vw;
+      height: 40vh;
+      width: auto;
     }
   }
 }
@@ -29,11 +31,22 @@
   justify-content: center;
   width: 65vw;
   margin: 0 5% 0 5%;
-}
 
-#art-projects .picture,
-#art-projects .picture img {
-  width: 30vw;
+  h2 {
+    margin: 10px 0 0 0;
+  }
+
+  .description {
+    margin: 10px 20px 0 20px;
+    text-align: left;
+    height: 17vh
+  }
+  .skills {
+    margin: 10px 20px 20px 20px;
+    text-align: center;
+    font-style: italic;
+    height: 8vh;
+  }
 }
 
 .prev, .next {
@@ -49,11 +62,6 @@
   border-radius: 3px;
   user-select: none;
 }
-/* 
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-} */
 
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
@@ -61,10 +69,73 @@
 
 .fade {
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 0.75s;
 }
 
 @keyframes fade {
-  from {opacity: .4}
+  from {opacity: 0}
+  to {opacity: 0.5}
   to {opacity: 1}
+}
+
+@media only screen and (max-width: 805px) {
+  #code-projects, #art-projects {
+    width: 90vw;
+    .picture {
+      margin: 10px;
+      height: auto;
+      width: min-content;
+      max-height: 40vh !important;
+      max-width: 70vw !important;
+
+      img {
+        height: auto;
+        width: auto;
+        max-height: 35vh !important;
+        max-width: 70vw !important;
+      }
+    }
+  }
+  .slide {
+    width: 80vw;
+    margin: 0 2% 0 2%;
+
+    .description {
+      height: 20vh;
+    }
+    .skills {
+      height: auto;
+    }
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1000px) {
+  #code-projects, #art-projects {
+    width: 90vw;
+    .picture {
+      margin: 10px;
+      height: auto;
+      width: min-content;
+      max-height: auto !important;
+      max-width: 70vw !important;
+
+      img {
+        height: auto;
+        width: auto;
+        max-height: 70vh !important;
+        max-width: 70vw !important;
+      }
+    }
+  }
+  .slide {
+    width: 80vw;
+    margin: 0 2% 0 2%;
+
+    .description {
+      height: 50vh;
+    }
+    .skills {
+      height: 20vh;
+    }
+  }
 }

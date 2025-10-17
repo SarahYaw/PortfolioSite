@@ -1,26 +1,27 @@
 code_projects = [
     {
         'name':'Form to PDF Python Program',
-        'description':"Program that lets the user import a CSV of questions and options into this program, answer the questions, export a PDF of the filled out form. Built in python using tkinter for the UI.",
-        'skills':'Python (Programming Language) · Tkinter · Project Planning · Application Development · Requirements Gathering',
+        'description':"Program that lets the user import a CSV of questions and options into this program, answer the questions, export a PDF of the filled out form. I've built this as a base for a project I'm building for a relative who has to fill out the same form every other week who's just editing PDFs all the time, hopefully this makes things easier. I'm going to make a private fork off of this so I can specify it to their situation. Any part that I looked up a lot for I put the link in the code right near it",
+        'skills':'Python (Programming Language) · Tkinter',
         'src':'./static/assets/code/formToPdf.png',
         'alt':'Plain form with example questons and answers. Black text on a gray background.',
         'link':'https://github.com/SarahYaw/simpleFormToPDF',
-        'caption':"I've built this as a base for a project I'm building for a relative who has to fill out the same form every other week who's just editing PDFs all the time, hopefully this makes things easier. I'm going to make a private fork off of this so I can specify it to their situation. Any part that I looked up a lot for I put the link in the code right near it",
+        'caption':"Thisis built in python using tkinter for the UI.",
+
     },
     {
         'name':'Medication Manager React.js Project',
-        'description':"Webpage that allows you to enter medications for it to track when you're due for a refill, how often you take it, who prescribed it, etc. Basic webpage with a basic back-end that gives you a CRUD interface for a table of entries. Made to brush up on React.js.",
-        'skills':'React.js · Node.js · Tailwind CSS · TypeScript · User Interface Design · LoopBack.io',
+        'description':"Webpage that allows you to enter medications for it to track when you're due for a refill, how often you take it, who prescribed it, etc. Has a basic LoopBack.io back-end that gives you a CRUD interface for a table of entries.",
+        'skills':'React.js · Tailwind CSS · TypeScript · LoopBack.io',
         'src':'./static/assets/code/medManager.png',
         'alt':'Chart listing med name, dosage, description, morning dose, afternoon dose, evening dose, provider, last refilled, and buttons to refill, edit, and remove the medication from the list',
         'link':'https://github.com/SarahYaw/MedManager',
-        'caption':'Made this as a proof-of-concept for a relative that wanted a more at-a-glance way to keep track of their medications.',
+        'caption':'A reatively at-a-glance spreadsheet page to keep track of their medications.',
     },
     {
         'name':'AudioAI',
         'description':"Web application that allows users to use LLM's and AI voice software to create novel renditions of spec spots and other segments to fill air time. Connects to quite a few different automation softwares to air the tracks on-time.",
-        'skills':'GitHub · Wireframing · Node.js · Visual Studio · Web Applications · Bootstrap (Framework) · Web Application Development · Front-End Development · Software as a Service (SaaS) · JavaScript · Application Development · Full-Stack Development · Application Programming Interfaces (API) · Cascading Style Sheets (CSS) · Git · TypeScript · Django · Project Development · REST APIs · Software Development · User Experience (UX) · Python (Programming Language) · Back-End Web Development · HTML · Vue.js · Web Development',
+        'skills':'HTML · Cascading Style Sheets (CSS) · JavaScript · Vue.js · Bootstrap (Framework) · Application Programming Interfaces (API) · Python (Programming Language) · TypeScript · Django',
         'src':'./static/assets/code/audioai.png',
         'alt':'audio ai user interface showing the various adjustments one can make to a voice.',
         'link':'https://futurimedia.com/solutions/audioai/',
@@ -29,7 +30,7 @@ code_projects = [
     {
         'name':'Beacon',
         'description':'This beacon mobile application is what the end-users will interact with. I did work on the administrative web application, but that is not open to the general public.',
-        'skills':'GitHub · Wireframing · Node.js · Visual Studio · Web Applications · Vuetify · Web Application Development · Front-End Development · Software as a Service (SaaS) · JavaScript · Application Development · Full-Stack Development · Application Programming Interfaces (API) · Cascading Style Sheets (CSS) · Git · Project Development · REST APIs · Software Development · User Experience (UX) · Python (Programming Language) · HTML · Vue.js · Web Development',
+        'skills':'HTML · Cascading Style Sheets (CSS) · JavaScript · Vue.js · Vutify ·  Bootstrap (Framework) · Application Programming Interfaces (API) · Python (Programming Language) · TypeScript · Django',
         'src':'../static/assets/code/beacon.png',
         'alt':'beacon mobile application.',
         'link':'https://www.beaconalwayson.com/',
@@ -38,7 +39,7 @@ code_projects = [
     {
         'name':'SpotOn',
         'description':"Web application that allows users to use LLM's and AI voice software to create novel renditions of spec spots and other segments to fill air time.",
-        'skills':'GitHub · Wireframing · Node.js · Visual Studio · Web Applications · Bootstrap (Framework) · Web Application Development · Front-End Development · Software as a Service (SaaS) · JavaScript · Application Development · Full-Stack Development · Application Programming Interfaces (API) · Cascading Style Sheets (CSS) · Git · TypeScript · Django · Project Development · REST APIs · Software Development · User Experience (UX) · Python (Programming Language) · Back-End Web Development · HTML · Programming · Web Development',
+        'skills':'HTML · Cascading Style Sheets (CSS) · JavaScript · Vue.js · Vutify ·  Bootstrap (Framework) · Application Programming Interfaces (API) · Python (Programming Language) · TypeScript · Django',
         'src':'../static/assets/code/spoton.png',
         'alt':'Spot On user interface showing a soundwave under the header Current Spot, and options to manage the spec spot and adjust audio levels.',
         'link':'https://futurimedia.com/solutions/spoton/',
@@ -47,11 +48,11 @@ code_projects = [
     {
         'name': 'Crop Yield Predictor',
         'description': 'Program that predicts crop yields for Bay County Michigan given precipitation, temperature, and yield data from previous years. This was a project for my Big Data class. The focus was on handling large amounts of data and managing it efficiently.',
-        'skills': 'Java · GitHub · Computer Science · Programming Languages · Software Development · Programming',
+        'skills': 'Java · Data Analysis',
         'src':'../static/assets/code/cropYield.jpg',
         'alt': 'Poster showing the project details of the crop yield program.',
         'link':'https://www.facebook.com/share/p/1Cgkuxb2fD/',
-        'caption':'Presentation poster I made for the Undergraduate Symposium'
+        'caption':'Presentation poster I made for the Undergraduate Symposium to present this project.',
     }
 ]
 art_projects = [
@@ -78,6 +79,24 @@ art_projects = [
         'src':'../static/assets/art/tissueCoverAbleSisters.jpg',
         'alt':"Tissue box cover that looks like the Able Sisters store from Animal Crossing New Horizons. It's a building with red siding, a green shingled roof, and white trim. There's a sign above the door that reads Able Sisters and has a green striped awning under that sign. On the left side of the front there's a display window with a mannequin and some spools of thread. ",
         'caption':'I grew up playing games in the Animal Crossing franchise and Able Sisters was always my favorite store',
+    },
+    
+    {
+        'name':'Flower Hat',
+        'description':'I like plants of many kinds and sewing and collecting baseball caps, so I made this cute hat about it.',
+        'skills':'Planning · Embroidery',
+        'src':'../static/assets/art/flowerHat.png',
+        'alt':"Various flowers embroidered on to a dark blue denim baseball cap. ",
+        'caption':"Dollar Tree sometimes sells plain baseball caps. They're pretty good for embroidery",
+    },
+    
+    {
+        'name':'Bead Plant',
+        'description':"Apparently there's a trend of making plants out of beads. I saw a few online and thought it would be the perfect little gift for my friend. We both like plants and one of the rooms in her new condo gets great sun, so I had to jump on the bandwagon",
+        'skills':'Planning · Beading · Jewelry Making',
+        'src':'../static/assets/art/beadPlant.png',
+        'alt':"A small string of pearls plant made out of translucent seed beads. The plant sits in a clear pot with translucent resin as the dirt and three chains attached so it can be hung up. ",
+        'caption':'I made this bead plant for my friends birthday.',
     },
 ]
 timeline_items_1 = [

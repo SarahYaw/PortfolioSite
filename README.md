@@ -9,4 +9,5 @@ Just a nice portfolio website to host projects and summaries
 
 ## Reference (✿ヘᴥヘ)
 [Flask Docs](https://flask.palletsprojects.com/en/stable/)
+
 [Jinja Docs](https://jinja.palletsprojects.com/en/stable/)

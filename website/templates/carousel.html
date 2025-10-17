@@ -4,7 +4,7 @@
 
 <button class="prev" onclick="plusSlides(-1, {{set}})">&#10094;</button>
 {% for project in projects %}
-    <div class="slide">
+    <div class="slide fade">
         {% if project.link %}
         <h2><a href="{{ project.link }}" target="_blank">{{ project.name }}</a></h2>
         {% else %}
@@ -14,8 +14,8 @@
             <img src="{{ project.src }}" alt="{{ project.alt }}" onclick="enlargeImg(this)">
             <p>{{project.caption}}</p>
         </div>
-        <p> &nbsp; &nbsp; {{ project.description }}</p>
-        <p><span style="font-weight: bolder">Skills: </span>{{ project.skills }}</p>
+        <p class="description"> &nbsp; &nbsp; {{ project.description }}</p>
+        <p class="skills"><span style="font-weight: bolder">Skills: </span>{{ project.skills }}</p>
     </div>
 {% endfor %}
 <button class="next" onclick="plusSlides(1, {{set}})">&#10095;</button>
