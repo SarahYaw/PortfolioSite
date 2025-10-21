@@ -2,7 +2,6 @@
 #code-projects, #art-projects {
   display: flex;
   flex-direction: row;
-  position: relative;
   margin: auto;
   align-items: center;  
   justify-content: center;
@@ -11,60 +10,62 @@
   border-radius: 40px;
   padding: 10px;
   box-shadow: rgba(0, 0, 0, 0.2) 5px 5px 5px;
+  
+  .slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 65vw;
+    margin: 0 5% 0 5%;
+    height: 90vh;
 
-  .picture {
-    margin: 20px;
-    height: 50vh;
-    width: min-content;
+    h2 {
+      margin: 10px 0 0 0;
+    }
+    .picture {
+      margin: 20px;
+      height: fit-content;
+      width: min-content;
+      max-height: 50%;
+      max-width: 70vw;
 
-    img {
-      height: 40vh;
-      width: auto;
+      img {
+        height: auto;
+        width: auto;
+        max-width: 50vw;
+        max-height: 40vh;
+        min-height: 20vw;
+      }
+    }
+    .description {
+      margin: 10px 20px 0 20px;
+      text-align: left;
+      height: 17vh
+    }
+    .skills {
+      margin: 10px 20px 20px 20px;
+      text-align: center;
+      font-style: italic;
+      height: 8vh;
     }
   }
-}
-
-.slide {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 65vw;
-  margin: 0 5% 0 5%;
-
-  h2 {
-    margin: 10px 0 0 0;
+  .prev, .next {
+    cursor: pointer;
+    width: auto;
+    height: 55px;
+    padding: 16px;
+    color: #ecfaff;
+    background-color: #04202b;
+    border: none;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 3px;
+    user-select: none;
   }
-
-  .description {
-    margin: 10px 20px 0 20px;
-    text-align: left;
-    height: 17vh
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
   }
-  .skills {
-    margin: 10px 20px 20px 20px;
-    text-align: center;
-    font-style: italic;
-    height: 8vh;
-  }
-}
-
-.prev, .next {
-  cursor: pointer;
-  width: auto;
-  height: 55px;
-  padding: 16px;
-  color: #ecfaff;
-  background-color: #04202b;
-  border: none;
-  font-weight: bold;
-  font-size: 18px;
-  border-radius: 3px;
-  user-select: none;
-}
-
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
 }
 
 .fade {
@@ -77,65 +78,103 @@
   to {opacity: 0.5}
   to {opacity: 1}
 }
+@media only screen and (max-width:700px) {
+  #code-projects,
+  #art-projects {
+      margin: 2px !important;
+      width: auto !important;
+      padding: 10px 0 !important;
+      .slide {
+          margin: 0;
+          width: 100%;
+          height: unset;
 
-@media only screen and (max-width: 805px) {
-  #code-projects, #art-projects {
-    width: 90vw;
-    .picture {
-      margin: 10px;
-      height: auto;
-      width: min-content;
-      max-height: 40vh !important;
-      max-width: 70vw !important;
-
-      img {
-        height: auto;
-        width: auto;
-        max-height: 35vh !important;
-        max-width: 70vw !important;
+          .description,
+          .skills {
+            height: fit-content;
+          }
+          
+        .picture {
+          margin: 10px 2px !important;
+          width: auto !important;
+          img {
+              margin: 0;
+              width: 100% !important;
+              max-width: unset !important;
+          }
+        }
       }
-    }
-  }
-  .slide {
-    width: 80vw;
-    margin: 0 2% 0 2%;
-
-    .description {
-      height: 20vh;
-    }
-    .skills {
-      height: auto;
-    }
+      .prev, .next {
+          padding: 8px;;
+      }
+      h2 {
+          font-size: medium;
+      }
   }
 }
-
 @media only screen and (min-width: 800px) and (max-width: 1000px) {
   #code-projects, #art-projects {
     width: 90vw;
+      .slide {
+        width: 80vw;
+        margin: 0 2% 0 2%;
+
+        .picture {
+          margin: 10px;
+          height: auto;
+          width: min-content;
+          max-height: auto !important;
+          max-width: 70vw !important;
+
+          img {
+            height: auto;
+            width: auto;
+            max-height: 70vh !important;
+            max-width: 70vw !important;
+          }
+        }
+        .description {
+          height: 50vh;
+        }
+        .skills {
+          height: 20vh;
+        }
+      }
+  }
+}
+
+@media only screen and (min-width:1001px) and (max-width:1080px) {
+  #code-projects, #art-projects {
+    width: 90vw;
+    
+  .slide {
+    width: 80vw;
+    margin: 0 2% 0 2%;
+    height: 40vh;
+    max-height: min-content;
+    justify-content: space-evenly;
+    
     .picture {
       margin: 10px;
       height: auto;
       width: min-content;
-      max-height: auto !important;
+      max-height: 30vh !important;
       max-width: 70vw !important;
 
       img {
         height: auto;
         width: auto;
-        max-height: 70vh !important;
+        max-height: 20vh !important;
         max-width: 70vw !important;
+        min-height: 15vh;
       }
     }
-  }
-  .slide {
-    width: 80vw;
-    margin: 0 2% 0 2%;
-
     .description {
-      height: 50vh;
+      height: unset;
     }
     .skills {
-      height: 20vh;
+      height: unset;
     }
+  }
   }
 }

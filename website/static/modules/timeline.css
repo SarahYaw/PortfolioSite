@@ -179,3 +179,89 @@ h2 {
 .mobile-timeline {
     display: none;
 }
+@media only screen and (max-width: 700px) {
+        .picture.home,
+        .timeline-container,
+        .timeline-hint {
+            display: none !important;
+        }
+        .mobile-timeline {
+        display: block !important;
+        .card {
+            background-color: #04202b;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+            
+            &.empty {
+                display: none;
+            }
+            &.zero_month,
+            &.one_month,
+            &.two_month,
+            &.three_mont,
+            &.four_month,
+            &.five_month,
+            &.six_month,
+            &.eight_month,
+            &.ten_month,
+            &.eleven_month,
+            &.thirteen_month,
+            &.fourteen_month,
+            &.sixteen_month,
+            &.thirty_one_month,
+            &.thirty_two_month,
+            &.thirty_four_month,
+            &.thirty_six_month,
+            &.thirty_seven_month, 
+            &.fourty_four_month {
+                margin: 10px 0;
+            }
+            
+            &.green {
+                background-color: #03562d;
+            }
+            &.orange {
+                background-color: #b75105;
+            }
+            &.purple {
+                background-color: #672477;
+            }
+
+            a { 
+                color: #ecfaff !important;
+                text-decoration: underline;
+                &:visited {
+                  color: #ecfaff !important;  
+                }
+            }
+        }
+    }
+    h2 {
+        margin: 10px 0 !important;
+    }
+
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1000px) {
+    .timeline-container {
+        .card {
+            position: absolute;
+            top: 15vh;
+            right: 3vw;
+        }
+    }
+    h2 {
+        margin: 10px 0 !important;
+    }
+}
+
+@media only screen and (min-width:1001px) and (max-width:1080px) {
+    .timeline-container {
+        .card {
+            position: absolute;
+            top: 15vh;
+            right: 3vw;
+        }
+    }
+}
