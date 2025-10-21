@@ -29,6 +29,16 @@
                             } 
                         })
                     }
+                    
+                    // position card
+                    var cards = document.querySelectorAll('.card')
+                    var subheader = document.querySelector('h2')
+                    var rect = subheader.getBoundingClientRect();
+                    console.log(rect.bottom)
+                    cards.forEach((card) => {
+                        console.log(card)
+                        card.style.top = parseInt(rect.bottom) + 'px'
+                    })
                 </script>
             </div>
             <div class="mobile-timeline">

@@ -87,7 +87,6 @@
       .slide {
           margin: 0;
           width: 100%;
-          height: unset;
 
           .description,
           .skills {
@@ -118,6 +117,7 @@
       .slide {
         width: 80vw;
         margin: 0 2% 0 2%;
+        height: fit-content;
 
         .picture {
           margin: 10px;
@@ -150,7 +150,7 @@
   .slide {
     width: 80vw;
     margin: 0 2% 0 2%;
-    height: 40vh;
+    height: fit-content;
     max-height: min-content;
     justify-content: space-evenly;
     
@@ -158,13 +158,13 @@
       margin: 10px;
       height: auto;
       width: min-content;
-      max-height: 30vh !important;
+      max-height: fit-content;
       max-width: 70vw !important;
 
       img {
         height: auto;
         width: auto;
-        max-height: 20vh !important;
+        max-height: 30vh !important;
         max-width: 70vw !important;
         min-height: 15vh;
       }
