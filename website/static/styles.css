@@ -131,6 +131,9 @@ footer{
     main {
         padding: 3rem 1rem 1rem 1rem !important;
     }
+    nav ul {
+        font-size: large;
+    }
     .contact-border,
     .float-bottom {
         position: relative;

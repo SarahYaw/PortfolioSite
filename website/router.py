@@ -9,8 +9,8 @@ def index():
     return render_template('index.html')
 
 
-@bp.route('/about')
-def about():
+@bp.route('/experience')
+def experience():
     context={}
     currentYear = datetime.datetime.today().year
     difference = currentYear - 2016
@@ -22,7 +22,7 @@ def about():
     context['timeline_items_3'] = timeline_items_3
     context['timeline_items_4'] = timeline_items_4
     context['mobile_timeline'] = mobile_timeline
-    return render_template('about.html', context=context)
+    return render_template('experience.html', context=context)
 
 @bp.route('/projects')
 def projects():
