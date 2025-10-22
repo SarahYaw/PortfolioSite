@@ -8,7 +8,6 @@ bp = Blueprint('main', __name__)
 def index(): 
     return render_template('index.html')
 
-
 @bp.route('/experience')
 def experience():
     context={}
@@ -31,4 +30,8 @@ def projects():
     context['art_projects'] = art_projects
     return render_template('projects.html', context=context)
 
+@bp.route('/bugs')
+def bugs():
+    context={}
+    return render_template('bugs.html', context=context)
 # Additional routes can be added here
